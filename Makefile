@@ -10,11 +10,10 @@ all : $(EXECS)
 clean:
 	rm -rf $(EXECS) *.o
 
-build/rev_party: obj/main.o
+build/rev_party: obj/main.o obj/args.o
 	$(CC) -o $@ $^ $(CFLAGS)
 
-#obj/pile.o: head/pile.h
-#obj/main.o: head/pile.h head/test.h
+obj/args.o: head/args.h
 
 obj/%.o: src/%.c
 	$(CC) -c $< -o $@ $(CFLAGS)
