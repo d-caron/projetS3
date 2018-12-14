@@ -46,7 +46,8 @@ void err_args () {
  * @return true, si valide, false sinon
  */
 bool check_method (args* args_struct) {
-  if (strcmp(args_struct->method, "cm") == 0 ||
+  if (strcmp(args_struct->method, "\0") == 0 ||
+      strcmp(args_struct->method, "cm") == 0 ||
       strcmp(args_struct->method, "cp") == 0 ||
       strcmp(args_struct->method, "cs") == 0 || (
       strcmp(args_struct->csv_type, "-i") == 0 && (
