@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
 
@@ -28,7 +29,7 @@ void show_args (args* args_struct);
  *
  * @param err
  */
-void err_args (char* err);
+void err_args ();
 
 /**
  * @brief vérifie que la méthode de scrutin soit valide
@@ -47,7 +48,5 @@ bool check_method (args* args_struct);
  * @param args_struct
  * @param argc
  * @param argv
- *
- * @return true, si valide, false sinon
  */
-bool verif_args (args* my_args, int argc, char** argv);
+void verif_args (args* my_args, int argc, char** argv);

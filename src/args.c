@@ -32,8 +32,7 @@ void show_args (args* args_struct) {
  *
  * @param err
  */
-void err_args (char* err) {
-  printf("%s\n", err);
+void err_args () {
   printf("Usage : rev_party -d|-i <fichier>.csv [-l <fichier>.txt] [-m <methode>]\n");
   printf("pour -i methode peut être égal à : \"uni1\", \"uni2\", \"cm\", \"cp\", \"cs\" ou \"va\"\n");
   printf("pour -d methode peut être égal à : \"cm\", \"cp\" ou \"cs\"\n");
@@ -68,10 +67,8 @@ bool check_method (args* args_struct) {
  * @param args_struct
  * @param argc
  * @param argv
- *
- * @return true, si valide, false sinon
  */
-bool verif_args (args* my_args, int argc, char** argv) {
+void verif_args (args* my_args, int argc, char** argv) {
   int i = 1;
 
   while (i < argc) {
@@ -83,13 +80,15 @@ bool verif_args (args* my_args, int argc, char** argv) {
           i++;
         } 
         else { 
-          err_args("Erreur, vous n'avez pas spécifié le nom du fichier csv");
-          return -1;
+          printf("ERREUR, vous n'avez pas spécifié le nom du fichier csv\n");
+          err_args();
+          exit(EXIT_FAILURE);
         }
       } 
       else {
-        err_args("Erreur, vous essayez de passer 2 fichiers csv en paramètres");
-        return -1;
+        printf("ERREUR, %s ne peut être spécifié après %s\n", argv[i], my_args->csv_type);
+        err_args();
+        exit(EXIT_FAILURE);
       }
 
 
@@ -98,8 +97,9 @@ bool verif_args (args* my_args, int argc, char** argv) {
         my_args->log_file = argv[i];
         i++;
       } else {
-        err_args("Erreur, vous n'avez pas spécifié le nom du fichier log");
-        return -1;
+        printf("Erreur, vous n'avez pas spécifié le nom du fichier log\n");
+        err_args();
+        exit(EXIT_FAILURE);
       }
       
 
@@ -108,23 +108,24 @@ bool verif_args (args* my_args, int argc, char** argv) {
         my_args->method = argv[i];
         i++;
       } else {
-        err_args("Erreur, vous n'avez pas spécifié de méthode");
-        return -1;
+        printf("Erreur, vous n'avez pas spécifié de méthode\n");
+        err_args();
+        exit(EXIT_FAILURE);
       }
 
     } else {
-      err_args("Erreur, les arguments passés ne sont pas valides\n");
-      return -1;
+      printf("Erreur, les arguments passés ne sont pas valides\n");
+      err_args();
+      exit(EXIT_FAILURE);
     }
    
   }
 
   if (!check_method (my_args)) {
-    err_args("Erreur, la méthode spécifié n'est pas valide");
-    return -1;
+    printf("Erreur, la méthode spécifié n'est pas valide\n");
+    err_args();
+    exit(EXIT_FAILURE);
   }
 
   show_args(my_args);
-
-  return 0;
 }
