@@ -53,7 +53,7 @@ void affiche_tab_int (int* tab, int dim, FILE* logfp) {
 
 
 /**
- * @brief Alloue l'espace pour une matrice de nbRows lignes et nbCol colonnes
+ * @brief Alloue l'espace pour une matrice d'entier de nbRows lignes et nbCol colonnes
  *
  * @param nbRows
  * @param nbCol
@@ -101,6 +101,16 @@ void init_mat_int (int** mat, int nbRows, int nbCol, int valeur) {
 void creer_t_tab_int_dyn (t_tab_int_dyn* stTab, int dim) {
   stTab->dim = dim;
   stTab->tab = creer_tab_int(dim);
+}
+
+/**
+ * @brief Affiche la structure t_tab_int_dyn passé en parametre
+ *
+ * @param t_tab
+ * @param logfp
+ */
+void affiche_t_tab_int_dyn(t_tab_int_dyn t_tab, FILE *logfp) {
+  affiche_tab_int(t_tab.tab, t_tab.dim, logfp);
 }
 
 /**

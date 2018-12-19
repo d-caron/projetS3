@@ -39,7 +39,7 @@ typedef struct s_arc_p{ /// arc pondéré
 /* X */ void creer_t_mat_int_dyn(t_mat_int_dyn *stTab,int nbRows,int nbCol); // utilise la struct
 /* X */ void creer_t_tab_int_dyn(t_tab_int_dyn *stTab,int dim); // idem
 /* X */ void creer_t_mat_char_dyn(t_mat_char_star_dyn * s_tabmots);
-void affiche_t_tab_int_dyn(t_tab_int_dyn t_tab, FILE *logfp);
+/* X */ void affiche_t_tab_int_dyn(t_tab_int_dyn t_tab, FILE *logfp);
 void affiche_t_mat_char_star_dyn(t_mat_char_star_dyn t_tabmots, FILE *logfp);
 void affiche_t_mat_int_dyn(t_mat_int_dyn t_tab, FILE *logfp);
 void affiche_mat_int(int **duels_mat,int nbRows,int nbCol,FILE *logfp);

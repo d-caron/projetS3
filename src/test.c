@@ -23,9 +23,11 @@ int main (int argc, char** argv) {
   // Test des structures des fichiers squelette.h/utils_sd.c
   FILE* logfp = NULL;
 
-  int* tab = creer_tab_int(10);
-  init_tab_int(tab, 10, 42);
-  affiche_tab_int(tab, 10, logfp);
+  t_tab_int_dyn t_tab;
+  creer_t_tab_int_dyn(&t_tab, 10);
+  init_tab_int(t_tab.tab, t_tab.dim, 555);
+  affiche_t_tab_int_dyn(t_tab, logfp);
+  
 
   return 0;
 }
