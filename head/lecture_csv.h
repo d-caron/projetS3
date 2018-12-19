@@ -10,7 +10,7 @@
  *
  * @return le fichier csv ouvert
  */
-void  open_csv (char* chemin, FILE** csv);
+void open_csv (char* chemin, FILE** csv);
 
 /**
  * @brief Lis le fichier csv et renvoi son contenu dans une chaine de caractère
@@ -19,7 +19,7 @@ void  open_csv (char* chemin, FILE** csv);
  *
  * @return 
  */
-void read_csv (FILE** csv, char** s_csv);
+void read_csv (FILE** csv, char*** s_csv);
 
 /**
  * @brief ferme le fichier csv ouvert

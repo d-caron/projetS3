@@ -9,7 +9,7 @@ void open_csv (char* chemin, FILE** csv) {
   *csv = fopen(chemin, "r");
 
   if (*csv == NULL) {
-    printf("Impossible d'ouvrir le fichier %s", chemin);
+    printf("Impossible d'ouvrir le fichier %s\n", chemin);
     exit(EXIT_FAILURE);
   }
 }
@@ -19,20 +19,18 @@ void open_csv (char* chemin, FILE** csv) {
  *
  * @param csv
  */
-void read_csv (FILE** csv, char** s_csv) {  
-  char buff[10];
-  //printf("je vais lire le csv");
-  //fflush(stdout);
+void read_csv (FILE** csv, char*** s_csv) {  
+  int i = 0;
+  
   if (*csv == NULL) {
-    printf("Impossible de lire le fichier");
+    printf("Impossible de lire le fichier\n");
     exit(EXIT_FAILURE);
   }
 
-  while (fgets (buff, 10, *csv) != NULL) {
-    printf("%s", buff);
+  while (fgets (*s_csv[i], 10, *csv) != NULL) {
+    i ++;
+    printf("%s", *s_csv[i-1]);
   }
-  //printf("j'ai lu le fichier csv");
-  //fflush(stdout);
 }
 
 
@@ -42,5 +40,9 @@ void read_csv (FILE** csv, char** s_csv) {
  * @param csv
  */
 void close_csv (FILE** csv) {
+  printf("je vais fermer le csv\n");
+  fflush(stdout);
   fclose(*csv);
+  printf("j'ai fermé le csv\n");
+  fflush(stdout);
 }
