@@ -9,6 +9,8 @@ int main (int argc, char** argv) {
   init_args (&my_args);
 
   verif_args (&my_args, argc, argv);
+
+  printf("\n\n");
   
   /* Lecture du fichier csv
 
@@ -27,6 +29,13 @@ int main (int argc, char** argv) {
   creer_t_tab_int_dyn(&t_tab, 10);
   init_tab_int(t_tab.tab, t_tab.dim, 555);
   affiche_t_tab_int_dyn(t_tab, logfp);
+
+  printf("\n\n");
+
+  t_mat_int_dyn t_mat;
+  creer_t_mat_int_dyn(&t_mat, 5, 10);
+  init_mat_int(t_mat.tab, t_mat.nbRows, t_mat.nbCol, 21);
+  affiche_t_mat_int_dyn(t_mat, logfp);
   
 
   return 0;

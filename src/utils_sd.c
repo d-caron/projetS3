@@ -35,7 +35,7 @@ void init_tab_int (int* tab, int dim, int valeur) {
 }
 
 /**
- * @brief Affiche le tableau passé en paramètres
+ * @brief Affiche le tableau d'entier passé en paramètre
  *
  * @param tab
  * @param dim
@@ -91,6 +91,20 @@ void init_mat_int (int** mat, int nbRows, int nbCol, int valeur) {
   }
 }
 
+/**
+ * @brief Affiche la matrice d'entier passé en paramètre
+ *
+ * @param duels_mat
+ * @param nbRows
+ * @param nbCol
+ * @param logfp
+ */
+void affiche_mat_int (int** duels_mat, int nbRows, int nbCol, FILE* logfp) {
+  for (int l = 0; l < nbRows; l ++) {
+    affiche_tab_int(duels_mat[l], nbCol, logfp);
+  }
+}
+
 
 /**
  * @brief Initialise une structure t_tab_int_dyn et alloue l'espace nécessaire
@@ -124,6 +138,16 @@ void creer_t_mat_int_dyn (t_mat_int_dyn* stTab, int nbRows, int nbCol) {
   stTab->nbRows = nbRows;
   stTab->nbCol = nbCol;
   stTab->tab = creer_mat_int(nbRows, nbCol);
+}
+
+/**
+ * @brief Affiche la structure t_mat_int_dyn passé en paramètre
+ *
+ * @param t_tab
+ * @param logfp
+ */
+void affiche_t_mat_int_dyn(t_mat_int_dyn t_tab, FILE* logfp) {
+  affiche_mat_int(t_tab.tab, t_tab.nbRows, t_tab.nbCol, logfp);
 }
 
 /**
