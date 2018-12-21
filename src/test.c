@@ -36,7 +36,17 @@ int main (int argc, char** argv) {
   creer_t_mat_int_dyn(&t_mat, 5, 10);
   init_mat_int(t_mat.tab, t_mat.nbRows, t_mat.nbCol, 21);
   affiche_t_mat_int_dyn(t_mat, logfp);
-  
+
+  printf("\n\n");
+
+  t_mat_char_star_dyn t_mat_char;
+  creer_t_mat_char_dyn(&t_mat_char);
+  t_mat_char.tab[0][0][0] = 't';
+  t_mat_char.tab[0][0][1] = 'e';
+  t_mat_char.tab[0][0][2] = 's';
+  t_mat_char.tab[0][0][3] = 't';
+  t_mat_char.tab[0][0][4] = '\0';
+  affiche_t_mat_char_star_dyn(t_mat_char, logfp);
 
   return 0;
 }

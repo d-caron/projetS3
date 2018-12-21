@@ -185,3 +185,21 @@ void creer_t_mat_char_dyn (t_mat_char_star_dyn* s_tabmot) {
     }
   }
 }
+
+/**
+ * @brief Affiche la structure t_mat_char_star_dyn passé en paramètre
+ *
+ * @param t_tabmots
+ * @param logfp
+ */
+void affiche_t_mat_char_star_dyn(t_mat_char_star_dyn t_tabmots, FILE* logfp) {
+  for (int l = 0; l < t_tabmots.nbRows; l ++) {
+    printf("[ ");
+
+    for (int c = 0; c < t_tabmots.nbCol - 1; c ++) {
+      printf("%s \t| ", t_tabmots.tab[l][c]);
+    }
+
+    printf("%s \t]\n", t_tabmots.tab[l][t_tabmots.nbCol - 1]);
+  }
+}
