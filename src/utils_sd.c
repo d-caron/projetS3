@@ -156,9 +156,9 @@ void affiche_t_mat_int_dyn(t_mat_int_dyn t_tab, FILE* logfp) {
  * @param s_tabmot
  */
 void creer_t_mat_char_dyn (t_mat_char_star_dyn* s_tabmot) {
-  s_tabmot->nbRows = STR_MAT_ROW;
-  s_tabmot->nbCol = STR_MAT_COL;
-  s_tabmot->offset = 0;
+  s_tabmot->nbRows = 1;
+  s_tabmot->nbCol = 1;
+  s_tabmot->offset = 3;
   
   s_tabmot->tab = malloc(STR_MAT_ROW * sizeof(char**));
 

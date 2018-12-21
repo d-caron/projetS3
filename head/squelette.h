@@ -1,6 +1,6 @@
-#define STR_LEN 50
-#define STR_MAT_ROW 50
-#define STR_MAT_COL 10
+#define STR_LEN 100
+#define STR_MAT_COL 100
+#define STR_MAT_ROW 500
 // mettre des choses avant
 #define MIN(a,b) (((a)<(b))?(a):(b))
 #define MAX(a,b) (((a)>(b))?(a):(b))

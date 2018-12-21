@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "../head/squelette.h"
 
 #define MAX_CSV_WIDTH 1000
 
@@ -19,7 +20,7 @@ void open_csv (char* chemin, FILE** csv);
  *
  * @return 
  */
-void read_csv (FILE** csv, char*** s_csv);
+void read_csv (FILE** csv, t_mat_char_star_dyn* t_mat_char);
 
 /**
  * @brief ferme le fichier csv ouvert

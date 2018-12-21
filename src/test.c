@@ -1,5 +1,4 @@
 #include "../head/args.h"
-#include "../head/squelette.h"
 #include "../head/lecture_csv.h"
 
 
@@ -10,17 +9,7 @@ int main (int argc, char** argv) {
 
   verif_args (&my_args, argc, argv);
 
-  printf("\n\n");
-  
-  /* Lecture du fichier csv
-
-  FILE* csv = NULL;
-  char** s_csv = NULL;
-
-  open_csv(my_args.csv_file, &csv);
-  read_csv(&csv, &s_csv);
-  close_csv(&csv);
-  */
+  printf("\n\n");  
 
   // Test des structures des fichiers squelette.h/utils_sd.c
   FILE* logfp = NULL;
@@ -41,12 +30,17 @@ int main (int argc, char** argv) {
 
   t_mat_char_star_dyn t_mat_char;
   creer_t_mat_char_dyn(&t_mat_char);
-  t_mat_char.tab[0][0][0] = 't';
-  t_mat_char.tab[0][0][1] = 'e';
-  t_mat_char.tab[0][0][2] = 's';
-  t_mat_char.tab[0][0][3] = 't';
-  t_mat_char.tab[0][0][4] = '\0';
+
+  // Lecture du fichier csv
+
+  FILE* csv = NULL;
+
+  open_csv(my_args.csv_file, &csv);
+  read_csv(&csv, &t_mat_char);
+  close_csv(&csv);
+
   affiche_t_mat_char_star_dyn(t_mat_char, logfp);
+
 
   return 0;
 }

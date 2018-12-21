@@ -19,17 +19,49 @@ void open_csv (char* chemin, FILE** csv) {
  *
  * @param csv
  */
-void read_csv (FILE** csv, char*** s_csv) {  
-  int i = 0;
+void read_csv (FILE** csv, t_mat_char_star_dyn* t_mat_char) {  
+  int ch;
+  int l = 0, c = 0, i = 0;
+  int len_s = 1;
   
-  if (*csv == NULL) {
-    printf("Impossible de lire le fichier\n");
-    exit(EXIT_FAILURE);
+  // Première ligne (on en profite pour compter le nombre de colones)
+  while ((ch = fgetc(*csv)) != '\n') {
+    if ((char) ch == '\t') {
+      t_mat_char->nbCol ++;
+      t_mat_char->tab[l][c][i + 1] = '\0';
+      c ++;
+      i = 0;
+    } else {
+      t_mat_char->tab[l][c][i] = (char)ch;
+      i ++;
+      if (i == len_s) len_s ++;
+    }
   }
-
-  while (fgets (*s_csv[i], 10, *csv) != NULL) {
-    i ++;
-    printf("%s", *s_csv[i-1]);
+  
+  l ++; c = 0; i = 0;
+  t_mat_char->nbRows ++;
+  
+  // Lignes suivantes (on en profite pour compter le nombre de lignes)
+  while ((ch = fgetc(*csv)) != EOF) {
+    
+    if ((char)ch == '\n') {           // Si on tombe sur une fin de ligne
+      t_mat_char->nbRows ++;
+      t_mat_char->tab[l][c][i + 1] = '\0';
+      if (! feof(*csv)) {
+        l ++;
+        c = 0;
+        i = 0;
+      }
+    } else if ((char)ch == '\t') {    // Si on tombe sur une tabulation
+      t_mat_char->tab[l][c][i + 1] = '\0';
+      c ++;
+      i = 0;
+    } else {                          // Si c'est un autre caractère
+      t_mat_char->tab[l][c][i] = (char)ch;
+      i ++;
+      if (i == len_s) len_s ++;
+    }
+    
   }
 }
 
