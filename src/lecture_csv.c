@@ -61,8 +61,9 @@ void read_csv (FILE** csv, t_mat_char_star_dyn* t_mat_char) {
       i ++;
       if (i == len_s) len_s ++;
     }
-    
   }
+
+  t_mat_char->nbRows --;
 }
 
 
@@ -72,9 +73,5 @@ void read_csv (FILE** csv, t_mat_char_star_dyn* t_mat_char) {
  * @param csv
  */
 void close_csv (FILE** csv) {
-  printf("je vais fermer le csv\n");
-  fflush(stdout);
-  fclose(*csv);
-  printf("j'ai fermé le csv\n");
-  fflush(stdout);
+  fclose(*csv); 
 }

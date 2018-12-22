@@ -1,5 +1,4 @@
 #include "../head/args.h"
-#include "../head/squelette.h"
 #include "../head/lecture_csv.h"
 
 

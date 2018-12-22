@@ -127,6 +127,4 @@ void verif_args (args* my_args, int argc, char** argv) {
     err_args();
     exit(EXIT_FAILURE);
   }
-
-  show_args(my_args);
 }

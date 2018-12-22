@@ -8,6 +8,7 @@ int main (int argc, char** argv) {
   init_args (&my_args);
 
   verif_args (&my_args, argc, argv);
+  show_args (&my_args);
 
   printf("\n\n");  
 
