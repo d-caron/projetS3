@@ -1,7 +1,6 @@
 #define STR_LEN 100
 #define STR_MAT_COL 100
 #define STR_MAT_ROW 500
-// mettre des choses avant
 #define MIN(a,b) (((a)<(b))?(a):(b))
 #define MAX(a,b) (((a)>(b))?(a):(b))
 
@@ -25,6 +24,12 @@ typedef struct s_mat_char_dyn{
   int offset; // donne le nombre de colonnes avant celles des candidats
 } t_mat_char_star_dyn;
 
+/// \struct pour encapsuler des matrice de duels
+typedef struct s_duel_mat {
+  char** entete;
+  t_mat_int_dyn mat;
+} t_duel_mat;
+
 /// \struct arc pour les graphes
 typedef struct s_arc_p{ /// arc pondéré
   int orig;
@@ -47,4 +52,5 @@ void affiche_mat_int(int **duels_mat,int nbRows,int nbCol,FILE *logfp);
 void init_tab_int(int *tab,int dim,int valeur);// initialise avec une valeur
 void init_mat_int(int **mat,int nbRows,int nbCol,int valeur); // idem
 
-// mettre des choses après
+void creer_t_duel_mat (t_duel_mat* duel, int nbRows, int nbCol);
+void affiche_t_duel_mat (t_duel_mat duel, FILE* logfp);
