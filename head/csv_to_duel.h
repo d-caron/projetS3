@@ -5,4 +5,6 @@
 
 void csv_to_duel (const t_mat_char_star_dyn t_mat, t_duel_mat* t_duel);
 
+void duel_to_duel (const t_mat_char_star_dyn t_mat, t_duel_mat* t_duel);
+
 #endif
