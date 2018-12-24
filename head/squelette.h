@@ -1,3 +1,8 @@
+#ifndef _SQUELETTE_H
+#define _SQUELETTE_H
+
+#include <stdio.h>
+
 #define STR_LEN 100
 #define STR_MAT_COL 100
 #define STR_MAT_ROW 500
@@ -52,5 +57,7 @@ void affiche_mat_int(int **duels_mat,int nbRows,int nbCol,FILE *logfp);
 void init_tab_int(int *tab,int dim,int valeur);// initialise avec une valeur
 void init_mat_int(int **mat,int nbRows,int nbCol,int valeur); // idem
 
-void creer_t_duel_mat (t_duel_mat* duel, int nbRows, int nbCol);
+void creer_t_duel_mat (t_duel_mat* duel, int dim);
 void affiche_t_duel_mat (t_duel_mat duel, FILE* logfp);
+
+#endif

@@ -208,17 +208,17 @@ void affiche_t_mat_char_star_dyn (t_mat_char_star_dyn t_tabmots, FILE* logfp) {
  * @param nbRows
  * @param nbCol
  */
-void creer_t_duel_mat (t_duel_mat* duel, int nbRows, int nbCol) {
-  creer_t_mat_int_dyn(&duel->mat, nbRows, nbCol);
+void creer_t_duel_mat (t_duel_mat* duel, int dim) {
+  creer_t_mat_int_dyn(&duel->mat, dim, dim);
   
-  duel->entete = malloc(nbCol * sizeof(char*));
+  duel->entete = malloc(dim * sizeof(char*));
 
   if (duel->entete == NULL) {
     perror("Erreur : l'allocation de char* s'est mal passée\n");
     exit(2);
   }
 
-  for (int c = 0; c < nbCol; c ++) {
+  for (int c = 0; c < dim; c ++) {
     duel->entete[c] = malloc(STR_LEN * sizeof(char));
 
     if (duel->entete[c] == NULL) {

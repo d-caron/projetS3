@@ -1,5 +1,6 @@
 #include "../head/args.h"
 #include "../head/lecture_csv.h"
+#include "../head/csv_to_duel.h"
 
 
 int main (int argc, char** argv) {
@@ -41,6 +42,16 @@ int main (int argc, char** argv) {
   close_csv(&csv);
 
   affiche_t_mat_char_star_dyn(t_mat_char, logfp);
+
+  printf("\n\n");
+
+  t_duel_mat t_duel;
+  int dim = t_mat_char.nbCol - t_mat_char.offset;
+  creer_t_duel_mat(&t_duel, dim);
+  init_mat_int(t_duel.mat.tab, dim, dim,  0);
+  csv_to_duel(t_mat_char, &t_duel);
+
+  affiche_t_duel_mat(t_duel, logfp);
 
 
   return 0;

@@ -1,3 +1,6 @@
+#ifndef _ARGS_H
+#define _ARGS_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -50,3 +53,5 @@ bool check_method (args* args_struct);
  * @param argv
  */
 void verif_args (args* my_args, int argc, char** argv);
+
+#endif
