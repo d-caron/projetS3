@@ -43,10 +43,10 @@ void init_tab_int (int* tab, int dim, int valeur) {
  */
 void affiche_tab_int (int* tab, int dim, FILE* logfp) {
   for (int i = 0; i < dim - 1; i ++) {
-    printf("%d\t", tab[i]);
+    fprintf(logfp, "%d\t", tab[i]);
   }
 
-  printf("%d\n", tab[dim - 1]);
+  fprintf(logfp, "%d\n", tab[dim - 1]);
 }
 
 
@@ -193,10 +193,10 @@ void creer_t_mat_char_dyn (t_mat_char_star_dyn* s_tabmot) {
 void affiche_t_mat_char_star_dyn (t_mat_char_star_dyn t_tabmots, FILE* logfp) {
   for (int l = 0; l < t_tabmots.nbRows; l ++) {
     for (int c = 0; c < t_tabmots.nbCol - 1; c ++) {
-      printf("%s\t", t_tabmots.tab[l][c]);
+      fprintf(logfp, "%s\t", t_tabmots.tab[l][c]);
     }
 
-    printf("%s\n", t_tabmots.tab[l][t_tabmots.nbCol - 1]);
+    fprintf(logfp, "%s\n", t_tabmots.tab[l][t_tabmots.nbCol - 1]);
   }
 }
 
@@ -235,10 +235,10 @@ void creer_t_duel_mat (t_duel_mat* duel, int dim) {
  */
 void affiche_t_duel_mat (t_duel_mat duel, FILE* logfp) {
   for (int c = 0; c < duel.mat.nbCol - 1; c ++) {
-    printf("%s\t", duel.entete[c]);
+    fprintf(logfp, "%s\t", duel.entete[c]);
   }
 
-  printf("%s\n", duel.entete[duel.mat.nbCol - 1]);
+  fprintf(logfp, "%s\n", duel.entete[duel.mat.nbCol - 1]);
 
   affiche_t_mat_int_dyn(duel.mat, logfp);
 }

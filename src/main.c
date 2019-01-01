@@ -56,7 +56,7 @@ int main (int argc, char** argv) {
 
     fprintf(logfp, "\n\n");                   //  Affichage de la matrice de duel
     fprintf(logfp, "Matrice de duel correspondante : \n\n");
-    affiche_t_duel_mat(t_duel, stdout);
+    affiche_t_duel_mat(t_duel, logfp);
   }
 
 
@@ -64,7 +64,7 @@ int main (int argc, char** argv) {
   if (strcmp(my_args.method, "uni1") == 0) {
     scrutin_uni1(t_mat_char, logfp);
   } else if (strcmp(my_args.method, "uni2") == 0) {
-
+    scrutin_uni2(t_mat_char, logfp);
   } else if (strcmp(my_args.method, "cm") == 0) {
 
   } else if (strcmp(my_args.method, "cp") == 0) {
@@ -77,6 +77,7 @@ int main (int argc, char** argv) {
     if (strcmp(my_args.csv_type, "-i") == 0) {
       // Méthodes uni1, uni2, va
       scrutin_uni1(t_mat_char, logfp);
+      scrutin_uni2(t_mat_char, logfp);
     }
     // Méthode cm, cp, cs
 
