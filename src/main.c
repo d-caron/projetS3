@@ -7,7 +7,6 @@
 #include "../head/csv_to_duel.h"
 #include "../head/uni.h"
 
-
 int main (int argc, char** argv) {
 
   //  ETAPE 1 : Vérification des arguments
