@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetS3 - REV&#39;PARTY:  Fichier source de /home/dylan/L2INFS3/algo_prog_c/DM_1/head/test_matrices.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ProjetS3 - REV&#39;PARTY
+   &#160;<span id="projectnumber">0.0.5</span>
+   </div>
+   <div id="projectbrief">projet condorcet</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_35693b89cf12e1cb8e91c0ab6cbb991d.html">algo_prog_c</a></li><li class="navelem"><a class="el" href="dir_a9888d445ea71caaada9497b39c6ea2d.html">DM_1</a></li><li class="navelem"><a class="el" href="dir_dd343e573c9951c94e86ced3753b0a55.html">head</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">test_matrices.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//Matrice exemple du sujet</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keywordtype">char</span> testA1[4] = {1,1,1,2};</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keywordtype">char</span> testIA1[5] = {0,0,1,3,4};</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keywordtype">char</span> testJA1[4] = {0,1,3,0};</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keywordtype">char</span>* strMat1(){</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <span class="keywordflow">return</span> <span class="stringliteral">&quot;\n0 0 0 0\n1 0 0 0\n0 1 0 1\n2 0 0 0\n&quot;</span>;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//Matrice de test (10x10)</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">char</span> testA2[10] = {1,1,1,1,1,1,1,1,1,2};</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">char</span> testIA2[11] = {0,1,2,3,4,5,6,7,8,9,10};</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">char</span> testJA2[10] = {0,1,2,3,4,5,6,7,8,9};</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">char</span>* strMat2(){</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordflow">return</span> <span class="stringliteral">&quot;\n1 0 0 0 0 0 0 0 0 0\n0 1 0 0 0 0 0 0 0 0 \n0 0 1 0 0 0 0 0 0 0\n0 0 0 1 0 0 0 0 0 0\n0 0 0 0 1 0 0 0 0 0\n0 0 0 0 0 1 0 0 0 0\n0 0 0 0 0 0 1 0 0 0\n0 0 0 0 0 0 0 1 0 0\n0 0 0 0 0 0 0 0 1 0\n0 0 0 0 0 0 0 0 0 2\n&quot;</span>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//Matrice de test (10x10)</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">char</span> testA3[17] = {1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1};</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">char</span> testIA3[11] = {0,0,2,5,7,9,11,13,15,17,17};</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">char</span> testJA3[17] = {0,1,0,1,2,2,3,3,4,4,5,5,6,6,7,7,8};</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">char</span>* strMat3(){</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">return</span> <span class="stringliteral">&quot;\n0 0 0 0 0 0 0 0 0 0\n1 1 0 0 0 0 0 0 0 0 \n2 1 1 0 0 0 0 0 0 0\n0 0 1 1 0 0 0 0 0 0\n0 0 0 1 1 0 0 0 0 0\n0 0 0 0 1 1 0 0 0 0\n0 0 0 0 0 1 1 0 0 0\n0 0 0 0 0 0 1 1 0 0\n0 0 0 0 0 0 0 1 1 0\n0 0 0 0 0 0 0 0 0 0\n&quot;</span>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div></div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

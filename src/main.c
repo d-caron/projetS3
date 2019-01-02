@@ -1,3 +1,20 @@
+/**
+ * @file main.c
+ *
+ * @brief Fichier principal, générateur de l'exécutable principal "rev_party"
+ *  Il vérifie les arguments,
+ *  Lis le fichier csv;
+ *  Effectue les methodes de scrutins demandés
+ *  Stocke les résultats dans le fichier demandé ou à défaut les affiches à l'écran
+ *
+ * @author Dylan CARON
+ *
+ * @version 1.0.0
+ *
+ * @date 02/01/2019 
+ */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -17,7 +34,7 @@ int main (int argc, char** argv) {
 
 
   //  ETAPE 2 : Lecture du fichier csv
-  FILE* csv = NULL;                           //  Fichier de stockage du csv
+  FILE* csv = fopen(my_args.csv_file, "r");   //  Fichier de stockage du csv
   FILE * logfp;
   
   if (strcmp(my_args.log_file, "\0") == 0) {  //  Pas de fichier de log
@@ -84,7 +101,9 @@ int main (int argc, char** argv) {
 
 
   //  ETAPE 5 : Fermeture du csv
-  close_csv(&csv);
+  if (csv != stdout) {
+    fclose(csv);
+  }
 
   return 0;
 }

@@ -1,12 +1,20 @@
+/**
+ * @file args.c
+ *
+ * @brief Définie les structures et fonctions de args.h
+ *
+ * @see ../head/args.h
+ *
+ * @author Dylan CARON
+ *
+ * @version 1.0.0
+ *
+ * @date 02/01/2019 
+ */
+
 #include "../head/args.h"
 
 
-/**
- * @brief Initialise une structure de type args
- *
- * @param args_struct
- */
-/// \brief test
 void init_args (args* args_struct) {
   args_struct->csv_type = "\0";
   args_struct->csv_file = "\0";
@@ -14,11 +22,7 @@ void init_args (args* args_struct) {
   args_struct->method = "\0";
 }
 
-/**
- * @brief Affiche une structure de type args
- *
- * @param args_struct
- */
+
 void show_args (args* args_struct) {
   printf("{\n");
   printf("  csv_type : %s\n", args_struct->csv_type);
@@ -28,24 +32,14 @@ void show_args (args* args_struct) {
   printf("}\n");
 }
 
-/**
- * @brief Affiche une erreur avec un message typique
- *
- * @param err
- */
+
 void err_args () {
   printf("Usage : rev_party -d|-i <fichier>.csv [-l <fichier>.txt] [-m <methode>]\n");
   printf("pour -i methode peut être égal à : \"uni1\", \"uni2\", \"cm\", \"cp\", \"cs\" ou \"va\"\n");
   printf("pour -d methode peut être égal à : \"cm\", \"cp\" ou \"cs\"\n");
 }
 
-/**
- * @brief vérifie que la méthode de scrutin soit valide
- *
- * @param args_struct
- *
- * @return true, si valide, false sinon
- */
+
 bool check_method (args* args_struct) {
   if (strcmp(args_struct->method, "\0") == 0 ||
       strcmp(args_struct->method, "cm") == 0 ||
@@ -62,14 +56,7 @@ bool check_method (args* args_struct) {
   return false;
 }
 
-/**
- * @brief FONCTION ULTIME : Utilise l'enssemble des autres méthodes
- *        pour vérifier les "argc"  arguments passés dans "argv"
- *
- * @param args_struct
- * @param argc
- * @param argv
- */
+
 void verif_args (args* my_args, int argc, char** argv) {
   int i = 1;
 

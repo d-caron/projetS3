@@ -1,3 +1,16 @@
+/**
+ * @file test.c
+ *
+ * @brief Fichier de tests pour les fonctions programés. Il génère l'exécutable "test"
+ *
+ * @author Dylan CARON
+ *
+ * @version 1.0.0
+ *
+ * @date 02/01/2019 
+ */
+
+
 #include "../head/args.h"
 #include "../head/lecture_csv.h"
 #include "../head/csv_to_duel.h"

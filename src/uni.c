@@ -1,15 +1,21 @@
+/**
+ * @file uni.c
+ *
+ * @brief Définie les fonctions déclarées dans uni.h
+ *
+ * @see ../head/uni.h
+ *
+ * @author Dylan CARON
+ *
+ * @version 1.0.0
+ *
+ * @date 02/01/2019 
+ */
+
+
 #include "../head/uni.h"
 
 
-/**
- * @brief Cherche la valeur min de la ligne et la stocke dans *min
- *
- * @param t_mat
- * @param l
- * @param min
- *
- * @return N° de la colonne correspondant au min
- */
 int recup_min (const t_mat_char_star_dyn t_mat, const int l, int* min) {
   *min = atoi(t_mat.tab[l][t_mat.offset]);
   int res = 0;
@@ -25,17 +31,6 @@ int recup_min (const t_mat_char_star_dyn t_mat, const int l, int* min) {
 }
 
 
-/**
- * @brief Vérifie l'unicité du vote
- *
- * @param t_mat
- * @param l
- * @param min
- * @param res
- @  àparam null : nombre de votes null
- *
- * @return true si unique, false sinon
- */
 bool verif_unicite (const t_mat_char_star_dyn t_mat, const int l, const int min, const int res, int* null) {
   for (int c = t_mat.offset; c < t_mat.nbCol; c ++) {
     if (atoi(t_mat.tab[l][c]) == min && res != c - t_mat.offset) {
@@ -48,13 +43,6 @@ bool verif_unicite (const t_mat_char_star_dyn t_mat, const int l, const int min,
 }
 
 
-/**
- * @brief Déroule le premier tour d'un vote uninominal et stocke les scores dans t_res
- *
- * @param t_mat
- * @param t_res
- * @param null : nombre de votes null
- */
 void uni_tour_1 (const t_mat_char_star_dyn t_mat, t_tab_int_dyn* t_res, int* null) {
   int min, res;
   
@@ -68,14 +56,6 @@ void uni_tour_1 (const t_mat_char_star_dyn t_mat, t_tab_int_dyn* t_res, int* nul
 }
 
 
-/**
- * @brief Déroule le second tour d'un vote uninominal et stocke les scores dans c1 et c2
- *
- * @param t_mat
- * @param c1 : Premier candidat élu au premier tour
- * @param c2 : Second candidat élu au premier tour
- * @param null : nombre de votes nulls
- */
 void uni_tour_2 (const t_mat_char_star_dyn t_mat, const int i_c1, const int i_c2, int* res_c1, int* res_c2, int* null) {
   *res_c1 = 0; *res_c2 = 0;
 
@@ -91,12 +71,6 @@ void uni_tour_2 (const t_mat_char_star_dyn t_mat, const int i_c1, const int i_c2
 }
 
 
-/**
- * @brief Trouve le vainqueur d'un scrutin uninominal à 1 tour et affiche le résultat
- *
- * @param t_mat
- * @param logfp
- */
 void scrutin_uni1 (const t_mat_char_star_dyn t_mat, FILE* logfp) {
   int i_win = 0;
   int null = 0;
@@ -124,12 +98,6 @@ void scrutin_uni1 (const t_mat_char_star_dyn t_mat, FILE* logfp) {
 }
 
 
-/**
- * @brief trouve le vainqueur d'un scrutin uninominal à 2 tour et affiche le résultat
- *
- * @param t_mat
- * @param logfp
- */
 void scrutin_uni2 (const t_mat_char_star_dyn t_mat, FILE* logfp) {
   int i_win1 = 0, i_win2;
   int null = 0;
