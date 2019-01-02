@@ -5,7 +5,7 @@ int nbEltList(liste lst) {
 }
 
 void createList(liste *p) {
-  p->nbElt = DIMMAX;
-  p->Tete = -1
+  p->nbElt = 0;
+  p->Tete = 0;
   p->TabListe
 }
