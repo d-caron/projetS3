@@ -6,6 +6,7 @@
  *
  * @param args_struct
  */
+/// \brief test
 void init_args (args* args_struct) {
   args_struct->csv_type = "\0";
   args_struct->csv_file = "\0";
