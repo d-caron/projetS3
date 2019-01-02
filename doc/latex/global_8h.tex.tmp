@@ -1,0 +1,30 @@
+\hypertarget{global_8h}{}\section{Référence du fichier /home/dylan/\+L2\+I\+N\+F\+S3/projet\+S3/head/global.h}
+\label{global_8h}\index{/home/dylan/\+L2\+I\+N\+F\+S3/projet\+S3/head/global.\+h@{/home/dylan/\+L2\+I\+N\+F\+S3/projet\+S3/head/global.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Graphe des dépendances par inclusion de global.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structs__arc__p}{s\+\_\+arc\+\_\+p}
+\end{DoxyCompactItemize}
+\subsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{global_8h_a6481fa2d5db097a85ff5fe162c14068a}\label{global_8h_a6481fa2d5db097a85ff5fe162c14068a}} 
+typedef struct \hyperlink{structs__arc__p}{s\+\_\+arc\+\_\+p} {\bfseries t\+\_\+arc\+\_\+p}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Vincent Dugat 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+august 2018 
+\end{DoxyDate}

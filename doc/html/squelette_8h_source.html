@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetS3 - REV&#39;PARTY:  Fichier source de /home/dylan/L2INFS3/projetS3/head/squelette.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ProjetS3 - REV&#39;PARTY
+   &#160;<span id="projectnumber">0.0.5</span>
+   </div>
+   <div id="projectbrief">projet condorcet</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_06b090c849413a2743cf102ffb0713d3.html">head</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">squelette.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _SQUELETTE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _SQUELETTE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define STR_LEN 100</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define STR_MAT_COL 100</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define STR_MAT_ROW 500</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define MIN(a,b) (((a)&lt;(b))?(a):(b))</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define MAX(a,b) (((a)&gt;(b))?(a):(b))</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structs__tab__dyn.html">   13</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structs__tab__dyn.html">s_tab_dyn</a>{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordtype">int</span> * tab;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordtype">int</span> dim;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;} <a class="code" href="structs__tab__dyn.html">t_tab_int_dyn</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structs__mat__dyn.html">   18</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structs__mat__dyn.html">s_mat_dyn</a>{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">int</span> ** tab;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">int</span> nbRows;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">int</span> nbCol;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} <a class="code" href="structs__mat__dyn.html">t_mat_int_dyn</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structs__mat__char__dyn.html">   25</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structs__mat__char__dyn.html">s_mat_char_dyn</a>{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">char</span> *** tab;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">int</span> nbRows;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">int</span> nbCol;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">int</span> offset; <span class="comment">// donne le nombre de colonnes avant celles des candidats</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;} <a class="code" href="structs__mat__char__dyn.html">t_mat_char_star_dyn</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structs__duel__mat.html">   33</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structs__duel__mat.html">s_duel_mat</a> {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">char</span>** entete;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="structs__mat__dyn.html">t_mat_int_dyn</a> mat;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <a class="code" href="structs__duel__mat.html">t_duel_mat</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structs__arc__p.html">s_arc_p</a>{ </div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">int</span> orig;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">int</span> dest;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">int</span> poids;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;} <a class="code" href="structs__arc__p.html">t_arc_p</a>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">int</span> * creer_tab_int(<span class="keywordtype">int</span> dim); <span class="comment">// juste un malloc de dim cases</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">int</span> ** creer_mat_int(<span class="keywordtype">int</span> nbRows,<span class="keywordtype">int</span> nbCol); <span class="comment">// malob 2D</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> affiche_tab_int(<span class="keywordtype">int</span> *tab,<span class="keywordtype">int</span> dim, FILE *logfp);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> creer_t_mat_int_dyn(<a class="code" href="structs__mat__dyn.html">t_mat_int_dyn</a> *stTab,<span class="keywordtype">int</span> nbRows,<span class="keywordtype">int</span> nbCol); <span class="comment">// utilise la struct</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> creer_t_tab_int_dyn(<a class="code" href="structs__tab__dyn.html">t_tab_int_dyn</a> *stTab,<span class="keywordtype">int</span> dim); <span class="comment">// idem</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> creer_t_mat_char_dyn(<a class="code" href="structs__mat__char__dyn.html">t_mat_char_star_dyn</a> * s_tabmots);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> affiche_t_tab_int_dyn(<a class="code" href="structs__tab__dyn.html">t_tab_int_dyn</a> t_tab, FILE *logfp);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> affiche_t_mat_char_star_dyn(<a class="code" href="structs__mat__char__dyn.html">t_mat_char_star_dyn</a> t_tabmots, FILE *logfp);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> affiche_t_mat_int_dyn(<a class="code" href="structs__mat__dyn.html">t_mat_int_dyn</a> t_tab, FILE *logfp);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span> affiche_mat_int(<span class="keywordtype">int</span> **duels_mat,<span class="keywordtype">int</span> nbRows,<span class="keywordtype">int</span> nbCol,FILE *logfp);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> init_tab_int(<span class="keywordtype">int</span> *tab,<span class="keywordtype">int</span> dim,<span class="keywordtype">int</span> valeur);<span class="comment">// initialise avec une valeur</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> init_mat_int(<span class="keywordtype">int</span> **mat,<span class="keywordtype">int</span> nbRows,<span class="keywordtype">int</span> nbCol,<span class="keywordtype">int</span> valeur); <span class="comment">// idem</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> creer_t_duel_mat (<a class="code" href="structs__duel__mat.html">t_duel_mat</a>* duel, <span class="keywordtype">int</span> dim);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">void</span> affiche_t_duel_mat (<a class="code" href="structs__duel__mat.html">t_duel_mat</a> duel, FILE* logfp);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structs__tab__dyn_html"><div class="ttname"><a href="structs__tab__dyn.html">s_tab_dyn</a></div><div class="ttdef"><b>Definition:</b> squelette.h:13</div></div>
+<div class="ttc" id="structs__mat__char__dyn_html"><div class="ttname"><a href="structs__mat__char__dyn.html">s_mat_char_dyn</a></div><div class="ttdef"><b>Definition:</b> squelette.h:25</div></div>
+<div class="ttc" id="structs__arc__p_html"><div class="ttname"><a href="structs__arc__p.html">s_arc_p</a></div><div class="ttdef"><b>Definition:</b> global.h:11</div></div>
+<div class="ttc" id="structs__duel__mat_html"><div class="ttname"><a href="structs__duel__mat.html">s_duel_mat</a></div><div class="ttdef"><b>Definition:</b> squelette.h:33</div></div>
+<div class="ttc" id="structs__mat__dyn_html"><div class="ttname"><a href="structs__mat__dyn.html">s_mat_dyn</a></div><div class="ttdef"><b>Definition:</b> squelette.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

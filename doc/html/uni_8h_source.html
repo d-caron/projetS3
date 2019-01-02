@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetS3 - REV&#39;PARTY:  Fichier source de /home/dylan/L2INFS3/projetS3/head/uni.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ProjetS3 - REV&#39;PARTY
+   &#160;<span id="projectnumber">0.0.5</span>
+   </div>
+   <div id="projectbrief">projet condorcet</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_06b090c849413a2743cf102ffb0713d3.html">head</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">uni.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _UNI_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _UNI_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../head/squelette.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">int</span> recup_min (<span class="keyword">const</span> <a class="code" href="structs__mat__char__dyn.html">t_mat_char_star_dyn</a> t_mat, <span class="keyword">const</span> <span class="keywordtype">int</span> l, <span class="keywordtype">int</span>* min);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">bool</span> verif_unicite(<span class="keyword">const</span> <a class="code" href="structs__mat__char__dyn.html">t_mat_char_star_dyn</a> t_mat, <span class="keyword">const</span> <span class="keywordtype">int</span> l, <span class="keyword">const</span> <span class="keywordtype">int</span> min, <span class="keyword">const</span> <span class="keywordtype">int</span> res, <span class="keywordtype">int</span>* null);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> uni_tour_1(<span class="keyword">const</span> <a class="code" href="structs__mat__char__dyn.html">t_mat_char_star_dyn</a> t_mat, <a class="code" href="structs__tab__dyn.html">t_tab_int_dyn</a>* t_res, <span class="keywordtype">int</span>* null);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> uni_tour_2 (<span class="keyword">const</span> <a class="code" href="structs__mat__char__dyn.html">t_mat_char_star_dyn</a> t_mat, <span class="keyword">const</span> <span class="keywordtype">int</span> i_c1, <span class="keyword">const</span> <span class="keywordtype">int</span> i_c2, <span class="keywordtype">int</span>* res_c1, <span class="keywordtype">int</span>* res_c2, <span class="keywordtype">int</span>* null);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span>  scrutin_uni1(<span class="keyword">const</span> <a class="code" href="structs__mat__char__dyn.html">t_mat_char_star_dyn</a> t_mat, FILE* logfp);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> scrutin_uni2 (<span class="keyword">const</span> <a class="code" href="structs__mat__char__dyn.html">t_mat_char_star_dyn</a> t_mat, FILE* logfp);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="structs__tab__dyn_html"><div class="ttname"><a href="structs__tab__dyn.html">s_tab_dyn</a></div><div class="ttdef"><b>Definition:</b> squelette.h:13</div></div>
+<div class="ttc" id="structs__mat__char__dyn_html"><div class="ttname"><a href="structs__mat__char__dyn.html">s_mat_char_dyn</a></div><div class="ttdef"><b>Definition:</b> squelette.h:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
