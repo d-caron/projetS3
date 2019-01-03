@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['lecture_5fcsv_2ec',['lecture_csv.c',['../lecture__csv_8c.html',1,'']]],
-  ['lecture_5fcsv_2eh',['lecture_csv.h',['../lecture__csv_8h.html',1,'']]],
-  ['liste',['liste',['../structliste.html',1,'']]],
-  ['liste_2ec',['liste.c',['../liste_8c.html',1,'']]],
-  ['liste_2eh',['liste.h',['../liste_8h.html',1,'']]],
-  ['liste_20des_20choses_20à_20faire',['Liste des choses à faire',['../todo.html',1,'']]]
+  ['init_5fargs',['init_args',['../args_8h.html#a86ce6582eb9dc40b89b8380554d32347',1,'init_args(args *args_struct):&#160;args.c'],['../args_8c.html#a86ce6582eb9dc40b89b8380554d32347',1,'init_args(args *args_struct):&#160;args.c']]],
+  ['init_5fmat_5fint',['init_mat_int',['../squelette_8h.html#a48718f42e674f032d418d56d9586a2bf',1,'utils_sd.c']]],
+  ['init_5ftab_5fint',['init_tab_int',['../squelette_8h.html#a941a572f313edd85907218084b61371a',1,'utils_sd.c']]]
 ];

@@ -68,14 +68,13 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Définitions de type</a> &#124;
-<a href="#func-members">Fonctions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Fonctions</a>  </div>
   <div class="headertitle">
 <div class="title">Référence du fichier squelette.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Déclare un enssemble de types (tableaux/matrices de caractère/entiers) ainsi que les fonctions permettant de les manipuler.  
+<p>Fichier de déclarations relatives aux SD partagées.  
 <a href="#details">Plus de détails...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -90,6 +89,14 @@ Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier
 <div class="dyncontent">
 <div class="center"><img src="squelette_8h__dep__incl.png" border="0" usemap="#_2home_2dylan_2L2INFS3_2projetS3_2head_2squelette_8hdep" alt=""/></div>
 <map name="_2home_2dylan_2L2INFS3_2projetS3_2head_2squelette_8hdep" id="_2home_2dylan_2L2INFS3_2projetS3_2head_2squelette_8hdep">
+<area shape="rect" id="node2" href="csv__to__duel_8h.html" title="Fichier de déclarations relatives à la transformation d&#39;un csv en matrice de duel. " alt="" coords="185,95,346,151"/>
+<area shape="rect" id="node4" href="main_8c.html" title="Fichier principal. " alt="" coords="581,206,739,247"/>
+<area shape="rect" id="node6" href="lecture__csv_8h.html" title="Fichier de déclarations relatives à la lecture d&#39;un csv. " alt="" coords="371,102,573,143"/>
+<area shape="rect" id="node8" href="uni_8h.html" title="Fichier de déclaraion relatives aux méthodes de scrutin uninominales. " alt="" coords="648,102,805,143"/>
+<area shape="rect" id="node3" href="csv__to__duel_8c.html" title="Fichier de définitions relatives à la transformation d&#39;un csv en matrice de duel. " alt="" coords="5,199,163,255"/>
+<area shape="rect" id="node5" href="test_8c.html" title="Fichier de tests. " alt="" coords="187,206,344,247"/>
+<area shape="rect" id="node7" href="lecture__csv_8c.html" title="Fichier de définitions relatives à la lecture d&#39;un csv. " alt="" coords="368,206,557,247"/>
+<area shape="rect" id="node9" href="uni_8c.html" title="Fichier de définitions relatives aux méthodes de scrutin uninominales. " alt="" coords="763,206,920,247"/>
 </map>
 </div>
 </div>
@@ -126,75 +133,67 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Définitions de type</h2></td></tr>
-<tr class="memitem:af126bde433c737e956a530fcc6155dd0"><td class="memItemLeft" align="right" valign="top"><a id="af126bde433c737e956a530fcc6155dd0"></a>
-typedef struct <a class="el" href="structs__tab__dyn.html">s_tab_dyn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#af126bde433c737e956a530fcc6155dd0">t_tab_int_dyn</a></td></tr>
-<tr class="memdesc:af126bde433c737e956a530fcc6155dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour encapsuler des tableaux dynamiques d'entiers avec la dimension. <br /></td></tr>
-<tr class="separator:af126bde433c737e956a530fcc6155dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c1548287f3aeba3ec74dc95cbca5719"><td class="memItemLeft" align="right" valign="top"><a id="a6c1548287f3aeba3ec74dc95cbca5719"></a>
-typedef struct <a class="el" href="structs__mat__dyn.html">s_mat_dyn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a6c1548287f3aeba3ec74dc95cbca5719">t_mat_int_dyn</a></td></tr>
-<tr class="memdesc:a6c1548287f3aeba3ec74dc95cbca5719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour encapsuler des matrice 2D dynamiques d'entiers avec la dimension. <br /></td></tr>
-<tr class="separator:a6c1548287f3aeba3ec74dc95cbca5719"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6756577e931c169a1abaa0ea439f2fc"><td class="memItemLeft" align="right" valign="top"><a id="ab6756577e931c169a1abaa0ea439f2fc"></a>
-typedef struct <a class="el" href="structs__mat__char__dyn.html">s_mat_char_dyn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a></td></tr>
-<tr class="memdesc:ab6756577e931c169a1abaa0ea439f2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pour encapsuler des matrice 2D dynamiques de chaines de caractères avec le nombre de colonne et de lignes. <br /></td></tr>
-<tr class="separator:ab6756577e931c169a1abaa0ea439f2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b518557f21194cba30d4f780d93055"><td class="memItemLeft" align="right" valign="top"><a id="a71b518557f21194cba30d4f780d93055"></a>
+typedef struct <a class="el" href="structs__tab__dyn.html">s_tab_dyn</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t_tab_int_dyn</b></td></tr>
+<tr class="separator:a71b518557f21194cba30d4f780d93055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbda29014eac4aef9f13b911074e4cf1"><td class="memItemLeft" align="right" valign="top"><a id="afbda29014eac4aef9f13b911074e4cf1"></a>
+typedef struct <a class="el" href="structs__mat__dyn.html">s_mat_dyn</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t_mat_int_dyn</b></td></tr>
+<tr class="separator:afbda29014eac4aef9f13b911074e4cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6246790d2f4187545380406f21036c05"><td class="memItemLeft" align="right" valign="top"><a id="a6246790d2f4187545380406f21036c05"></a>
+typedef struct <a class="el" href="structs__mat__char__dyn.html">s_mat_char_dyn</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t_mat_char_star_dyn</b></td></tr>
+<tr class="separator:a6246790d2f4187545380406f21036c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69457be5ddef3e2391ce5ab3e0b6271"><td class="memItemLeft" align="right" valign="top"><a id="ae69457be5ddef3e2391ce5ab3e0b6271"></a>
+typedef struct <a class="el" href="structs__duel__mat.html">s_duel_mat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>t_duel_mat</b></td></tr>
+<tr class="separator:ae69457be5ddef3e2391ce5ab3e0b6271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Fonctions</h2></td></tr>
-<tr class="memitem:a962df3a1edbf24548f6a27e144be73d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a962df3a1edbf24548f6a27e144be73d5">creer_tab_int</a> (int dim)</td></tr>
-<tr class="memdesc:a962df3a1edbf24548f6a27e144be73d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloue l'espace nécessaire pour un tableau de "dim" entiers et initialise dim.  <a href="#a962df3a1edbf24548f6a27e144be73d5">Plus de détails...</a><br /></td></tr>
-<tr class="separator:a962df3a1edbf24548f6a27e144be73d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41b47a3fd48bac1179fb62b95165a179"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a41b47a3fd48bac1179fb62b95165a179">creer_tab_int</a> (int dim)</td></tr>
+<tr class="memdesc:a41b47a3fd48bac1179fb62b95165a179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée un tableau d'entier.  <a href="#a41b47a3fd48bac1179fb62b95165a179">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a41b47a3fd48bac1179fb62b95165a179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb7eabe8ded28a70303e309b31a28ab0"><td class="memItemLeft" align="right" valign="top">int **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#afb7eabe8ded28a70303e309b31a28ab0">creer_mat_int</a> (int nbRows, int nbCol)</td></tr>
-<tr class="memdesc:afb7eabe8ded28a70303e309b31a28ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloue l'espace nécessaire pour une matrice de "nbRows" * "nbCol" entiers.  <a href="#afb7eabe8ded28a70303e309b31a28ab0">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:afb7eabe8ded28a70303e309b31a28ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée matrice d'entier.  <a href="#afb7eabe8ded28a70303e309b31a28ab0">Plus de détails...</a><br /></td></tr>
 <tr class="separator:afb7eabe8ded28a70303e309b31a28ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56e7e1e1bace7d9a1e45a5eec5edbef6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a56e7e1e1bace7d9a1e45a5eec5edbef6">affiche_tab_int</a> (int *tab, int dim, FILE *logfp)</td></tr>
-<tr class="memdesc:a56e7e1e1bace7d9a1e45a5eec5edbef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'afficher un tableau d'entier Ecrit dans la destination ciblé par logfp.  <a href="#a56e7e1e1bace7d9a1e45a5eec5edbef6">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a56e7e1e1bace7d9a1e45a5eec5edbef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche un tableau d'entier.  <a href="#a56e7e1e1bace7d9a1e45a5eec5edbef6">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a56e7e1e1bace7d9a1e45a5eec5edbef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72eaf01807f248f44d7afdc1f9055b7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a72eaf01807f248f44d7afdc1f9055b7c">creer_t_mat_int_dyn</a> (<a class="el" href="squelette_8h.html#a6c1548287f3aeba3ec74dc95cbca5719">t_mat_int_dyn</a> *stTab, int nbRows, int nbCol)</td></tr>
-<tr class="memdesc:a72eaf01807f248f44d7afdc1f9055b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloue la mémoire et initialise les valeurs d'une structure t_mat_int_dyn.  <a href="#a72eaf01807f248f44d7afdc1f9055b7c">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:a72eaf01807f248f44d7afdc1f9055b7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a72eaf01807f248f44d7afdc1f9055b7c">creer_t_mat_int_dyn</a> (<a class="el" href="structt__mat__int__dyn.html">t_mat_int_dyn</a> *stTab, int nbRows, int nbCol)</td></tr>
+<tr class="memdesc:a72eaf01807f248f44d7afdc1f9055b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une structure <a class="el" href="structt__mat__int__dyn.html" title="Matrice d&#39;entier dynamque. ">t_mat_int_dyn</a>.  <a href="#a72eaf01807f248f44d7afdc1f9055b7c">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a72eaf01807f248f44d7afdc1f9055b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4c296adb52aa81c3889c3880b7bcff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#ae4c296adb52aa81c3889c3880b7bcff2">creer_t_tab_int_dyn</a> (<a class="el" href="squelette_8h.html#af126bde433c737e956a530fcc6155dd0">t_tab_int_dyn</a> *stTab, int dim)</td></tr>
-<tr class="memdesc:ae4c296adb52aa81c3889c3880b7bcff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloue la mémoire et initialise les valeurs d'une structure t_tab_int_dyn.  <a href="#ae4c296adb52aa81c3889c3880b7bcff2">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:ae4c296adb52aa81c3889c3880b7bcff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#ae4c296adb52aa81c3889c3880b7bcff2">creer_t_tab_int_dyn</a> (<a class="el" href="structt__tab__int__dyn.html">t_tab_int_dyn</a> *stTab, int dim)</td></tr>
+<tr class="memdesc:ae4c296adb52aa81c3889c3880b7bcff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une structure <a class="el" href="structt__tab__int__dyn.html" title="Tableau d&#39;entier dynamique. ">t_tab_int_dyn</a>.  <a href="#ae4c296adb52aa81c3889c3880b7bcff2">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ae4c296adb52aa81c3889c3880b7bcff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc7ce49692349962614d37b169415619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#afc7ce49692349962614d37b169415619">creer_t_mat_char_dyn</a> (<a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a> *s_tabmots)</td></tr>
-<tr class="memdesc:afc7ce49692349962614d37b169415619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloue la mémoire et initialise les valeurs d'une structure t_mat_char_star_dyn.  <a href="#afc7ce49692349962614d37b169415619">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:afc7ce49692349962614d37b169415619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#afc7ce49692349962614d37b169415619">creer_t_mat_char_dyn</a> (<a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a> *s_tabmots)</td></tr>
+<tr class="memdesc:afc7ce49692349962614d37b169415619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a>.  <a href="#afc7ce49692349962614d37b169415619">Plus de détails...</a><br /></td></tr>
 <tr class="separator:afc7ce49692349962614d37b169415619"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a540746e1dd10fe900c6acddcfb7d26b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a540746e1dd10fe900c6acddcfb7d26b6">affiche_t_tab_int_dyn</a> (<a class="el" href="squelette_8h.html#af126bde433c737e956a530fcc6155dd0">t_tab_int_dyn</a> t_tab, FILE *logfp)</td></tr>
-<tr class="memdesc:a540746e1dd10fe900c6acddcfb7d26b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'afficher une structure t_tab_int_dyn Ecrit dans la destination ciblé par logfp.  <a href="#a540746e1dd10fe900c6acddcfb7d26b6">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:a540746e1dd10fe900c6acddcfb7d26b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a540746e1dd10fe900c6acddcfb7d26b6">affiche_t_tab_int_dyn</a> (<a class="el" href="structt__tab__int__dyn.html">t_tab_int_dyn</a> t_tab, FILE *logfp)</td></tr>
+<tr class="memdesc:a540746e1dd10fe900c6acddcfb7d26b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche une structure <a class="el" href="structt__tab__int__dyn.html" title="Tableau d&#39;entier dynamique. ">t_tab_int_dyn</a>.  <a href="#a540746e1dd10fe900c6acddcfb7d26b6">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a540746e1dd10fe900c6acddcfb7d26b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec48dc5361c3f0587263edda1f51723c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#aec48dc5361c3f0587263edda1f51723c">affiche_t_mat_char_star_dyn</a> (<a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a> t_tabmots, FILE *logfp)</td></tr>
-<tr class="memdesc:aec48dc5361c3f0587263edda1f51723c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'afficher une structure t_mat_char_star_dyn Ecrit dans la destination ciblé par logfp.  <a href="#aec48dc5361c3f0587263edda1f51723c">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:aec48dc5361c3f0587263edda1f51723c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#aec48dc5361c3f0587263edda1f51723c">affiche_t_mat_char_star_dyn</a> (<a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a> t_tabmots, FILE *logfp)</td></tr>
+<tr class="memdesc:aec48dc5361c3f0587263edda1f51723c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche une structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a>.  <a href="#aec48dc5361c3f0587263edda1f51723c">Plus de détails...</a><br /></td></tr>
 <tr class="separator:aec48dc5361c3f0587263edda1f51723c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a5de127c5fc987fc1207835707f65a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a2a5de127c5fc987fc1207835707f65a4">affiche_t_mat_int_dyn</a> (<a class="el" href="squelette_8h.html#a6c1548287f3aeba3ec74dc95cbca5719">t_mat_int_dyn</a> t_tab, FILE *logfp)</td></tr>
-<tr class="memdesc:a2a5de127c5fc987fc1207835707f65a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'afficher une structure t_mat_int_dyn Ecrit dans la destination ciblé par logfp.  <a href="#a2a5de127c5fc987fc1207835707f65a4">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:a2a5de127c5fc987fc1207835707f65a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a2a5de127c5fc987fc1207835707f65a4">affiche_t_mat_int_dyn</a> (<a class="el" href="structt__mat__int__dyn.html">t_mat_int_dyn</a> t_tab, FILE *logfp)</td></tr>
+<tr class="memdesc:a2a5de127c5fc987fc1207835707f65a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche une structure <a class="el" href="structt__mat__int__dyn.html" title="Matrice d&#39;entier dynamque. ">t_mat_int_dyn</a>.  <a href="#a2a5de127c5fc987fc1207835707f65a4">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a2a5de127c5fc987fc1207835707f65a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c2f4bf1b114391cb819274896104a0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a0c2f4bf1b114391cb819274896104a0e">affiche_mat_int</a> (int **duels_mat, int nbRows, int nbCol, FILE *logfp)</td></tr>
-<tr class="memdesc:a0c2f4bf1b114391cb819274896104a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'afficher une matrice d'entier Ecrit dans la destination ciblé par logfp.  <a href="#a0c2f4bf1b114391cb819274896104a0e">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a0c2f4bf1b114391cb819274896104a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche une matrice d'entier.  <a href="#a0c2f4bf1b114391cb819274896104a0e">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a0c2f4bf1b114391cb819274896104a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a941a572f313edd85907218084b61371a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a941a572f313edd85907218084b61371a">init_tab_int</a> (int *tab, int dim, int valeur)</td></tr>
-<tr class="memdesc:a941a572f313edd85907218084b61371a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise un tableau d'entier avec la valeur passé en paramètre.  <a href="#a941a572f313edd85907218084b61371a">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a941a572f313edd85907218084b61371a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise un tableau d'entier.  <a href="#a941a572f313edd85907218084b61371a">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a941a572f313edd85907218084b61371a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48718f42e674f032d418d56d9586a2bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a48718f42e674f032d418d56d9586a2bf">init_mat_int</a> (int **mat, int nbRows, int nbCol, int valeur)</td></tr>
-<tr class="memdesc:a48718f42e674f032d418d56d9586a2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise une matrice d'entier avec la valeur passé en paramètre.  <a href="#a48718f42e674f032d418d56d9586a2bf">Plus de détails...</a><br /></td></tr>
+<tr class="memdesc:a48718f42e674f032d418d56d9586a2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise une matrice d'entier.  <a href="#a48718f42e674f032d418d56d9586a2bf">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a48718f42e674f032d418d56d9586a2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13a552ce9c731ae01a00f29e234176e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a13a552ce9c731ae01a00f29e234176e4">creer_t_duel_mat</a> (t_duel_mat *duel, int dim)</td></tr>
-<tr class="memdesc:a13a552ce9c731ae01a00f29e234176e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloue l'espace pour une structure t_duel_mat et initialise la "dim" de la matrice.  <a href="#a13a552ce9c731ae01a00f29e234176e4">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:a13a552ce9c731ae01a00f29e234176e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a13a552ce9c731ae01a00f29e234176e4">creer_t_duel_mat</a> (<a class="el" href="structt__duel__mat.html">t_duel_mat</a> *duel, int dim)</td></tr>
+<tr class="memdesc:a13a552ce9c731ae01a00f29e234176e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une structure <a class="el" href="structt__duel__mat.html" title="Matrice de duel. ">t_duel_mat</a>.  <a href="#a13a552ce9c731ae01a00f29e234176e4">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a13a552ce9c731ae01a00f29e234176e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a646d18b4e544730ccc92e1c9bf2ebe48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a646d18b4e544730ccc92e1c9bf2ebe48">affiche_t_duel_mat</a> (t_duel_mat duel, FILE *logfp)</td></tr>
-<tr class="memdesc:a646d18b4e544730ccc92e1c9bf2ebe48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'afficher une structure t_duel_mat Ecrit dans la destination ciblé par logfp.  <a href="#a646d18b4e544730ccc92e1c9bf2ebe48">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:a646d18b4e544730ccc92e1c9bf2ebe48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squelette_8h.html#a646d18b4e544730ccc92e1c9bf2ebe48">affiche_t_duel_mat</a> (<a class="el" href="structt__duel__mat.html">t_duel_mat</a> duel, FILE *logfp)</td></tr>
+<tr class="memdesc:a646d18b4e544730ccc92e1c9bf2ebe48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche une structure <a class="el" href="structt__duel__mat.html" title="Matrice de duel. ">t_duel_mat</a>.  <a href="#a646d18b4e544730ccc92e1c9bf2ebe48">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a646d18b4e544730ccc92e1c9bf2ebe48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a841ada79b48b24fe225906dab8bb8b74"><td class="memItemLeft" align="right" valign="top"><a id="a841ada79b48b24fe225906dab8bb8b74"></a>
-char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></tr>
-<tr class="separator:a841ada79b48b24fe225906dab8bb8b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28a4114753068461636a5ab02cc8cf47"><td class="memItemLeft" align="right" valign="top"><a id="a28a4114753068461636a5ab02cc8cf47"></a>
-<a class="el" href="squelette_8h.html#a6c1548287f3aeba3ec74dc95cbca5719">t_mat_int_dyn</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mat</b></td></tr>
-<tr class="separator:a28a4114753068461636a5ab02cc8cf47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p>Déclare un enssemble de types (tableaux/matrices de caractère/entiers) ainsi que les fonctions permettant de les manipuler. </p>
+<div class="textblock"><p>Fichier de déclarations relatives aux SD partagées. </p>
+<p>Déclare un enssemble de types (tableaux/matrices de caractère/entiers) ainsi que les fonctions permettant de les manipuler</p>
 <dl class="section author"><dt>Auteur</dt><dd>Vincent DUGAT, Dylan CARON</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0.0</dd></dl>
 <dl class="section date"><dt>Date</dt><dd>02/01/2019 </dd></dl>
@@ -237,7 +236,8 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Permet d'afficher une matrice d'entier Ecrit dans la destination ciblé par logfp. </p>
+<p>Affiche une matrice d'entier. </p>
+<p>Permet d'afficher une matrice d'entier Ecrit dans la destination ciblé par logfp</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">duels_mat</td><td>Matrice d'entier à afficher </td></tr>
@@ -259,7 +259,7 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
         <tr>
           <td class="memname">void affiche_t_duel_mat </td>
           <td>(</td>
-          <td class="paramtype">t_duel_mat&#160;</td>
+          <td class="paramtype"><a class="el" href="structt__duel__mat.html">t_duel_mat</a>&#160;</td>
           <td class="paramname"><em>duel</em>, </td>
         </tr>
         <tr>
@@ -276,7 +276,8 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Permet d'afficher une structure t_duel_mat Ecrit dans la destination ciblé par logfp. </p>
+<p>Affiche une structure <a class="el" href="structt__duel__mat.html" title="Matrice de duel. ">t_duel_mat</a>. </p>
+<p>Permet d'afficher une structure <a class="el" href="structt__duel__mat.html" title="Matrice de duel. ">t_duel_mat</a> Ecrit dans la destination ciblé par logfp</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">duel</td><td>Structure à afficher </td></tr>
@@ -296,7 +297,7 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
         <tr>
           <td class="memname">void affiche_t_mat_char_star_dyn </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a>&#160;</td>
           <td class="paramname"><em>t_tabmots</em>, </td>
         </tr>
         <tr>
@@ -313,7 +314,8 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Permet d'afficher une structure t_mat_char_star_dyn Ecrit dans la destination ciblé par logfp. </p>
+<p>Affiche une structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a>. </p>
+<p>Permet d'afficher une structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a> Ecrit dans la destination ciblé par logfp</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">t_tabmots</td><td>Structure à afficher </td></tr>
@@ -333,7 +335,7 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
         <tr>
           <td class="memname">void affiche_t_mat_int_dyn </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="squelette_8h.html#a6c1548287f3aeba3ec74dc95cbca5719">t_mat_int_dyn</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structt__mat__int__dyn.html">t_mat_int_dyn</a>&#160;</td>
           <td class="paramname"><em>t_tab</em>, </td>
         </tr>
         <tr>
@@ -350,7 +352,8 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Permet d'afficher une structure t_mat_int_dyn Ecrit dans la destination ciblé par logfp. </p>
+<p>Affiche une structure <a class="el" href="structt__mat__int__dyn.html" title="Matrice d&#39;entier dynamque. ">t_mat_int_dyn</a>. </p>
+<p>Permet d'afficher une structure <a class="el" href="structt__mat__int__dyn.html" title="Matrice d&#39;entier dynamque. ">t_mat_int_dyn</a> Ecrit dans la destination ciblé par logfp</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">t_tab</td><td>Structure à afficher </td></tr>
@@ -370,7 +373,7 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
         <tr>
           <td class="memname">void affiche_t_tab_int_dyn </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="squelette_8h.html#af126bde433c737e956a530fcc6155dd0">t_tab_int_dyn</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="structt__tab__int__dyn.html">t_tab_int_dyn</a>&#160;</td>
           <td class="paramname"><em>t_tab</em>, </td>
         </tr>
         <tr>
@@ -387,7 +390,8 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Permet d'afficher une structure t_tab_int_dyn Ecrit dans la destination ciblé par logfp. </p>
+<p>Affiche une structure <a class="el" href="structt__tab__int__dyn.html" title="Tableau d&#39;entier dynamique. ">t_tab_int_dyn</a>. </p>
+<p>Permet d'afficher une structure <a class="el" href="structt__tab__int__dyn.html" title="Tableau d&#39;entier dynamique. ">t_tab_int_dyn</a> Ecrit dans la destination ciblé par logfp</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">t_tab</td><td>Structure à afficher </td></tr>
@@ -430,7 +434,8 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Permet d'afficher un tableau d'entier Ecrit dans la destination ciblé par logfp. </p>
+<p>Affiche un tableau d'entier. </p>
+<p>Permet d'afficher un tableau d'entier. Ecrit dans la destination ciblé par logfp</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">tab</td><td>Tableau d'entier à afficher </td></tr>
@@ -468,7 +473,8 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Alloue l'espace nécessaire pour une matrice de "nbRows" * "nbCol" entiers. </p>
+<p>Crée matrice d'entier. </p>
+<p>Alloue l'espace nécessaire pour une matrice de "nbRows" * "nbCol" entiers</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">nbRows</td><td>Nombre de ligne de la matrice d'entier </td></tr>
@@ -489,7 +495,7 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
         <tr>
           <td class="memname">void creer_t_duel_mat </td>
           <td>(</td>
-          <td class="paramtype">t_duel_mat *&#160;</td>
+          <td class="paramtype"><a class="el" href="structt__duel__mat.html">t_duel_mat</a> *&#160;</td>
           <td class="paramname"><em>duel</em>, </td>
         </tr>
         <tr>
@@ -506,7 +512,8 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Alloue l'espace pour une structure t_duel_mat et initialise la "dim" de la matrice. </p>
+<p>Crée une structure <a class="el" href="structt__duel__mat.html" title="Matrice de duel. ">t_duel_mat</a>. </p>
+<p>Alloue l'espace pour une structure <a class="el" href="structt__duel__mat.html" title="Matrice de duel. ">t_duel_mat</a> et initialise la "dim" de la matrice</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">duel</td><td>Structure à créer </td></tr>
@@ -526,14 +533,15 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
         <tr>
           <td class="memname">void creer_t_mat_char_dyn </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a> *&#160;</td>
           <td class="paramname"><em>s_tabmots</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Alloue la mémoire et initialise les valeurs d'une structure t_mat_char_star_dyn. </p>
+<p>Crée une structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a>. </p>
+<p>Alloue la mémoire et initialise les valeurs d'une structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a></p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">s_tabmots</td><td>Pointeur vers la structure à créer </td></tr>
@@ -552,7 +560,7 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
         <tr>
           <td class="memname">void creer_t_mat_int_dyn </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="squelette_8h.html#a6c1548287f3aeba3ec74dc95cbca5719">t_mat_int_dyn</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structt__mat__int__dyn.html">t_mat_int_dyn</a> *&#160;</td>
           <td class="paramname"><em>stTab</em>, </td>
         </tr>
         <tr>
@@ -575,7 +583,8 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Alloue la mémoire et initialise les valeurs d'une structure t_mat_int_dyn. </p>
+<p>Crée une structure <a class="el" href="structt__mat__int__dyn.html" title="Matrice d&#39;entier dynamque. ">t_mat_int_dyn</a>. </p>
+<p>Alloue la mémoire et initialise les valeurs d'une structure <a class="el" href="structt__mat__int__dyn.html" title="Matrice d&#39;entier dynamque. ">t_mat_int_dyn</a></p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">stTab</td><td>Pointeur vers la structure à créer </td></tr>
@@ -596,7 +605,7 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
         <tr>
           <td class="memname">void creer_t_tab_int_dyn </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="squelette_8h.html#af126bde433c737e956a530fcc6155dd0">t_tab_int_dyn</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structt__tab__int__dyn.html">t_tab_int_dyn</a> *&#160;</td>
           <td class="paramname"><em>stTab</em>, </td>
         </tr>
         <tr>
@@ -613,7 +622,8 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Alloue la mémoire et initialise les valeurs d'une structure t_tab_int_dyn. </p>
+<p>Crée une structure <a class="el" href="structt__tab__int__dyn.html" title="Tableau d&#39;entier dynamique. ">t_tab_int_dyn</a>. </p>
+<p>Alloue la mémoire et initialise les valeurs d'une structure <a class="el" href="structt__tab__int__dyn.html" title="Tableau d&#39;entier dynamique. ">t_tab_int_dyn</a></p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">stTab</td><td>Pointeur vers la structure à créer </td></tr>
@@ -624,14 +634,14 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
 
 </div>
 </div>
-<a id="a962df3a1edbf24548f6a27e144be73d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a962df3a1edbf24548f6a27e144be73d5">&#9670;&nbsp;</a></span>creer_tab_int()</h2>
+<a id="a41b47a3fd48bac1179fb62b95165a179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41b47a3fd48bac1179fb62b95165a179">&#9670;&nbsp;</a></span>creer_tab_int()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct s_duel_matint * creer_tab_int </td>
+          <td class="memname">int * creer_tab_int </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>dim</em></td><td>)</td>
@@ -640,7 +650,8 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Alloue l'espace nécessaire pour un tableau de "dim" entiers et initialise dim. </p>
+<p>Crée un tableau d'entier. </p>
+<p>Alloue l'espace nécessaire pour un tableau de "dim" entiers</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">dim</td><td>Dimension du tableau d'entier</td></tr>
@@ -689,7 +700,8 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Initialise une matrice d'entier avec la valeur passé en paramètre. </p>
+<p>Initialise une matrice d'entier. </p>
+<p>Initialise une matrice d'entier avec la valeur passé en paramètre</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">mat</td><td>Matrice d'entier à initialiser </td></tr>
@@ -734,7 +746,8 @@ char **&#160;</td><td class="memItemRight" valign="bottom"><b>entete</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Initialise un tableau d'entier avec la valeur passé en paramètre. </p>
+<p>Initialise un tableau d'entier. </p>
+<p>Initialise un tableau d'entier avec la valeur passé en paramètre</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">tab</td><td>Tableau d'entier à initialiser </td></tr>

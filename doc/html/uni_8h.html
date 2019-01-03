@@ -71,7 +71,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Déclare un enssemble de fonctions permettant de dérouler un scrutin uninominal à un ou deux tour(s)  
+<p>Fichier de déclaraion relatives aux méthodes de scrutin uninominales.  
 <a href="#details">Plus de détails...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="squelette_8h_source.html">../head/squelette.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
@@ -81,6 +81,7 @@ Graphe des dépendances par inclusion de uni.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="uni_8h__incl.png" border="0" usemap="#_2home_2dylan_2L2INFS3_2projetS3_2head_2uni_8h" alt=""/></div>
 <map name="_2home_2dylan_2L2INFS3_2projetS3_2head_2uni_8h" id="_2home_2dylan_2L2INFS3_2projetS3_2head_2uni_8h">
+<area shape="rect" id="node2" href="squelette_8h.html" title="Fichier de déclarations relatives aux SD partagées. " alt="" coords="5,95,148,121"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -88,6 +89,8 @@ Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier
 <div class="dyncontent">
 <div class="center"><img src="uni_8h__dep__incl.png" border="0" usemap="#_2home_2dylan_2L2INFS3_2projetS3_2head_2uni_8hdep" alt=""/></div>
 <map name="_2home_2dylan_2L2INFS3_2projetS3_2head_2uni_8hdep" id="_2home_2dylan_2L2INFS3_2projetS3_2head_2uni_8hdep">
+<area shape="rect" id="node2" href="main_8c.html" title="Fichier principal. " alt="" coords="5,95,163,136"/>
+<area shape="rect" id="node3" href="uni_8c.html" title="Fichier de définitions relatives aux méthodes de scrutin uninominales. " alt="" coords="187,95,344,136"/>
 </map>
 </div>
 </div>
@@ -95,27 +98,28 @@ Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Fonctions</h2></td></tr>
-<tr class="memitem:a8794f64825e221a2b928c94799f19acb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni_8h.html#a8794f64825e221a2b928c94799f19acb">recup_min</a> (const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a> t_mat, const int l, int *min)</td></tr>
-<tr class="memdesc:a8794f64825e221a2b928c94799f19acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cherche le vote minimum de la ligne "l" et la stocke dans "*min".  <a href="#a8794f64825e221a2b928c94799f19acb">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:a8794f64825e221a2b928c94799f19acb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni_8h.html#a8794f64825e221a2b928c94799f19acb">recup_min</a> (const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a> t_mat, const int l, int *min)</td></tr>
+<tr class="memdesc:a8794f64825e221a2b928c94799f19acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère le minimum.  <a href="#a8794f64825e221a2b928c94799f19acb">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a8794f64825e221a2b928c94799f19acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec792364d6cd6ec1bf3a8e702a55b1c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni_8h.html#aec792364d6cd6ec1bf3a8e702a55b1c7">verif_unicite</a> (const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a> t_mat, const int l, const int min, const int res, int *null)</td></tr>
-<tr class="memdesc:aec792364d6cd6ec1bf3a8e702a55b1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie l'unicité du vote "min" à la ligne "l".  <a href="#aec792364d6cd6ec1bf3a8e702a55b1c7">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:aec792364d6cd6ec1bf3a8e702a55b1c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni_8h.html#aec792364d6cd6ec1bf3a8e702a55b1c7">verif_unicite</a> (const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a> t_mat, const int l, const int min, const int res, int *null)</td></tr>
+<tr class="memdesc:aec792364d6cd6ec1bf3a8e702a55b1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie l'unicité  <a href="#aec792364d6cd6ec1bf3a8e702a55b1c7">Plus de détails...</a><br /></td></tr>
 <tr class="separator:aec792364d6cd6ec1bf3a8e702a55b1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2187a609190552c6aea3bf018d3664a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni_8h.html#aa2187a609190552c6aea3bf018d3664a">uni_tour_1</a> (const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a> t_mat, <a class="el" href="squelette_8h.html#af126bde433c737e956a530fcc6155dd0">t_tab_int_dyn</a> *t_res, int *null)</td></tr>
-<tr class="memdesc:aa2187a609190552c6aea3bf018d3664a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Déroule le premier tour d'un vote uninominal et stocke les scores dans t_res.  <a href="#aa2187a609190552c6aea3bf018d3664a">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:aa2187a609190552c6aea3bf018d3664a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni_8h.html#aa2187a609190552c6aea3bf018d3664a">uni_tour_1</a> (const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a> t_mat, <a class="el" href="structt__tab__int__dyn.html">t_tab_int_dyn</a> *t_res, int *null)</td></tr>
+<tr class="memdesc:aa2187a609190552c6aea3bf018d3664a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uninominale tour 1.  <a href="#aa2187a609190552c6aea3bf018d3664a">Plus de détails...</a><br /></td></tr>
 <tr class="separator:aa2187a609190552c6aea3bf018d3664a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a064f07b6a724c21767c731d266d9ceb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni_8h.html#a064f07b6a724c21767c731d266d9ceb5">uni_tour_2</a> (const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a> t_mat, const int i_c1, const int i_c2, int *res_c1, int *res_c2, int *null)</td></tr>
-<tr class="memdesc:a064f07b6a724c21767c731d266d9ceb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Déroule le second tour d'un vote uninominal entre les candidats d'indices "i_c1" et "ic2" et stoque les résultats dans "*res_c1" et "*res_c2".  <a href="#a064f07b6a724c21767c731d266d9ceb5">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:a064f07b6a724c21767c731d266d9ceb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni_8h.html#a064f07b6a724c21767c731d266d9ceb5">uni_tour_2</a> (const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a> t_mat, const int i_c1, const int i_c2, int *res_c1, int *res_c2, int *null)</td></tr>
+<tr class="memdesc:a064f07b6a724c21767c731d266d9ceb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uninominale tour 2.  <a href="#a064f07b6a724c21767c731d266d9ceb5">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a064f07b6a724c21767c731d266d9ceb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7693623e60a6209f2ccf93208b7f8825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni_8h.html#a7693623e60a6209f2ccf93208b7f8825">scrutin_uni1</a> (const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a> t_mat, FILE *logfp)</td></tr>
-<tr class="memdesc:a7693623e60a6209f2ccf93208b7f8825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trouve le vainqueur d'un scrutin uninominal à 1 tour et affiche le résultat dans la destination "logfp".  <a href="#a7693623e60a6209f2ccf93208b7f8825">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:a7693623e60a6209f2ccf93208b7f8825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni_8h.html#a7693623e60a6209f2ccf93208b7f8825">scrutin_uni1</a> (const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a> t_mat, FILE *logfp)</td></tr>
+<tr class="memdesc:a7693623e60a6209f2ccf93208b7f8825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scrutin uninominal à un tour.  <a href="#a7693623e60a6209f2ccf93208b7f8825">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a7693623e60a6209f2ccf93208b7f8825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b46d3b4101b275818381bae1d379159"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni_8h.html#a8b46d3b4101b275818381bae1d379159">scrutin_uni2</a> (const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a> t_mat, FILE *logfp)</td></tr>
-<tr class="memdesc:a8b46d3b4101b275818381bae1d379159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trouve le vainqueur d'un scrutin uninominal à 2 tour et affiche le résultat dans la destination "logfp".  <a href="#a8b46d3b4101b275818381bae1d379159">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:a8b46d3b4101b275818381bae1d379159"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni_8h.html#a8b46d3b4101b275818381bae1d379159">scrutin_uni2</a> (const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a> t_mat, FILE *logfp)</td></tr>
+<tr class="memdesc:a8b46d3b4101b275818381bae1d379159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scrutin uninominal à deux tours.  <a href="#a8b46d3b4101b275818381bae1d379159">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a8b46d3b4101b275818381bae1d379159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p>Déclare un enssemble de fonctions permettant de dérouler un scrutin uninominal à un ou deux tour(s) </p>
+<div class="textblock"><p>Fichier de déclaraion relatives aux méthodes de scrutin uninominales. </p>
+<p>Déclare un enssemble de fonctions permettant de dérouler un scrutin uninominal à un ou deux tour(s)</p>
 <dl class="section author"><dt>Auteur</dt><dd>Dylan CARON</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0.0</dd></dl>
 <dl class="section date"><dt>Date</dt><dd>02/01/2019 </dd></dl>
@@ -129,7 +133,7 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">int recup_min </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a>&#160;</td>
           <td class="paramname"><em>t_mat</em>, </td>
         </tr>
         <tr>
@@ -152,10 +156,11 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cherche le vote minimum de la ligne "l" et la stocke dans "*min". </p>
+<p>Récupère le minimum. </p>
+<p>Cherche le vote minimum de la ligne "l" et la stocke dans "*min"</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t_mat</td><td>Structure t_mat_char_star_dyn à analyser (Non modifié) </td></tr>
+    <tr><td class="paramname">t_mat</td><td>Structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a> à analyser (Non modifié) </td></tr>
     <tr><td class="paramname">l</td><td>Numéro de la ligne à analyser (Non modifié) </td></tr>
     <tr><td class="paramname">min</td><td>Pointeur vers l'entier de stockage pour le vote minimum</td></tr>
   </table>
@@ -174,7 +179,7 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">void scrutin_uni1 </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a>&#160;</td>
           <td class="paramname"><em>t_mat</em>, </td>
         </tr>
         <tr>
@@ -191,10 +196,11 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Trouve le vainqueur d'un scrutin uninominal à 1 tour et affiche le résultat dans la destination "logfp". </p>
+<p>Scrutin uninominal à un tour. </p>
+<p>Trouve le vainqueur d'un scrutin uninominal à 1 tour et affiche le résultat dans la destination "logfp"</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t_mat</td><td>Structure t_mat_char_star_dyn contenant la liste des votes (Non modifié) </td></tr>
+    <tr><td class="paramname">t_mat</td><td>Structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a> contenant la liste des votes (Non modifié) </td></tr>
     <tr><td class="paramname">logfp</td><td>Destination d'affichage </td></tr>
   </table>
   </dd>
@@ -211,7 +217,7 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">void scrutin_uni2 </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a>&#160;</td>
           <td class="paramname"><em>t_mat</em>, </td>
         </tr>
         <tr>
@@ -228,10 +234,11 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Trouve le vainqueur d'un scrutin uninominal à 2 tour et affiche le résultat dans la destination "logfp". </p>
+<p>Scrutin uninominal à deux tours. </p>
+<p>Trouve le vainqueur d'un scrutin uninominal à 2 tour et affiche le résultat dans la destination "logfp"</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t_mat</td><td>Structure t_mat_char_star_dyn contenant la liste des votes (Non modifié) </td></tr>
+    <tr><td class="paramname">t_mat</td><td>Structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a> contenant la liste des votes (Non modifié) </td></tr>
     <tr><td class="paramname">logfp</td><td>Destination d'affichage </td></tr>
   </table>
   </dd>
@@ -248,13 +255,13 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">void uni_tour_1 </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a>&#160;</td>
           <td class="paramname"><em>t_mat</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="squelette_8h.html#af126bde433c737e956a530fcc6155dd0">t_tab_int_dyn</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structt__tab__int__dyn.html">t_tab_int_dyn</a> *&#160;</td>
           <td class="paramname"><em>t_res</em>, </td>
         </tr>
         <tr>
@@ -271,11 +278,12 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Déroule le premier tour d'un vote uninominal et stocke les scores dans t_res. </p>
+<p>Uninominale tour 1. </p>
+<p>Déroule le premier tour d'un vote uninominal et stocke les scores dans t_res</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t_mat</td><td>Structure t_mat_char_star_dyn contenant la liste des votes (Non modifié) </td></tr>
-    <tr><td class="paramname">t_res</td><td>Pointeur vers une structure t_tab_int_dyn qui recevra les résultats des votes </td></tr>
+    <tr><td class="paramname">t_mat</td><td>Structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a> contenant la liste des votes (Non modifié) </td></tr>
+    <tr><td class="paramname">t_res</td><td>Pointeur vers une structure <a class="el" href="structt__tab__int__dyn.html" title="Tableau d&#39;entier dynamique. ">t_tab_int_dyn</a> qui recevra les résultats des votes </td></tr>
     <tr><td class="paramname">null</td><td>Pointeur vers le nombre de votes null </td></tr>
   </table>
   </dd>
@@ -292,7 +300,7 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">void uni_tour_2 </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a>&#160;</td>
           <td class="paramname"><em>t_mat</em>, </td>
         </tr>
         <tr>
@@ -333,10 +341,11 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Déroule le second tour d'un vote uninominal entre les candidats d'indices "i_c1" et "ic2" et stoque les résultats dans "*res_c1" et "*res_c2". </p>
+<p>Uninominale tour 2. </p>
+<p>Déroule le second tour d'un vote uninominal entre les candidats d'indices "i_c1" et "ic2" et stoque les résultats dans "*res_c1" et "*res_c2"</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t_mat</td><td>Structure t_mat_char_star_dyn contenant la liste des votes (Non modifié) </td></tr>
+    <tr><td class="paramname">t_mat</td><td>Structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a> contenant la liste des votes (Non modifié) </td></tr>
     <tr><td class="paramname">i_c1</td><td>Indice du premier gagnant du premier tour </td></tr>
     <tr><td class="paramname">i_c2</td><td>Indice du second gagnant du premier tour </td></tr>
     <tr><td class="paramname">res_c1</td><td>Pointeur vers le résultat du premier gagnant du premier tour lors du second tour </td></tr>
@@ -357,7 +366,7 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">bool verif_unicite </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a>&#160;</td>
           <td class="paramname"><em>t_mat</em>, </td>
         </tr>
         <tr>
@@ -392,10 +401,11 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Vérifie l'unicité du vote "min" à la ligne "l". </p>
+<p>Vérifie l'unicité </p>
+<p>Vérifie s'il y a unicité du vote "min" à la ligne "l"</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t_mat</td><td>Structure t_mat_char_star_dyn à analyser (Non modifié) </td></tr>
+    <tr><td class="paramname">t_mat</td><td>Structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a> à analyser (Non modifié) </td></tr>
     <tr><td class="paramname">l</td><td>Numéro de la ligne à analyser (Non modifié) </td></tr>
     <tr><td class="paramname">min</td><td>Valeur dont on doit vérifier l'unicitée </td></tr>
     <tr><td class="paramname">res</td><td>Numéro de la colone à laquelle se trouve la valeur min </td></tr>

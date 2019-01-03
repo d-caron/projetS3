@@ -71,7 +71,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Déclare les fonctions permettant de transformer une structure t_mat_char_star_dyn en structure t_duel.  
+<p>Fichier de déclarations relatives à la transformation d'un csv en matrice de duel.  
 <a href="#details">Plus de détails...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="squelette_8h_source.html">../head/squelette.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -79,6 +79,7 @@ Graphe des dépendances par inclusion de csv_to_duel.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="csv__to__duel_8h__incl.png" border="0" usemap="#_2home_2dylan_2L2INFS3_2projetS3_2head_2csv__to__duel_8h" alt=""/></div>
 <map name="_2home_2dylan_2L2INFS3_2projetS3_2head_2csv__to__duel_8h" id="_2home_2dylan_2L2INFS3_2projetS3_2head_2csv__to__duel_8h">
+<area shape="rect" id="node2" href="squelette_8h.html" title="Fichier de déclarations relatives aux SD partagées. " alt="" coords="15,109,157,136"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -86,6 +87,9 @@ Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier
 <div class="dyncontent">
 <div class="center"><img src="csv__to__duel_8h__dep__incl.png" border="0" usemap="#_2home_2dylan_2L2INFS3_2projetS3_2head_2csv__to__duel_8hdep" alt=""/></div>
 <map name="_2home_2dylan_2L2INFS3_2projetS3_2head_2csv__to__duel_8hdep" id="_2home_2dylan_2L2INFS3_2projetS3_2head_2csv__to__duel_8hdep">
+<area shape="rect" id="node2" href="csv__to__duel_8c.html" title="Fichier de définitions relatives à la transformation d&#39;un csv en matrice de duel. " alt="" coords="5,109,163,165"/>
+<area shape="rect" id="node3" href="main_8c.html" title="Fichier principal. " alt="" coords="187,117,344,158"/>
+<area shape="rect" id="node4" href="test_8c.html" title="Fichier de tests. " alt="" coords="368,117,525,158"/>
 </map>
 </div>
 </div>
@@ -93,20 +97,17 @@ Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Fonctions</h2></td></tr>
-<tr class="memitem:afa1c08d7370ed285a5ee2453a16242b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="csv__to__duel_8h.html#afa1c08d7370ed285a5ee2453a16242b3">csv_to_duel</a> (const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a> t_mat, t_duel_mat *t_duel)</td></tr>
-<tr class="memdesc:afa1c08d7370ed285a5ee2453a16242b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforme un csv de type liste de vote stocké dans une structure t_mat_char_star_dyn en structure t_duel (matrice de duel)  <a href="#afa1c08d7370ed285a5ee2453a16242b3">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:afa1c08d7370ed285a5ee2453a16242b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="csv__to__duel_8h.html#afa1c08d7370ed285a5ee2453a16242b3">csv_to_duel</a> (const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a> t_mat, <a class="el" href="structt__duel__mat.html">t_duel_mat</a> *t_duel)</td></tr>
+<tr class="memdesc:afa1c08d7370ed285a5ee2453a16242b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">csv (vote) vers matrice de duel  <a href="#afa1c08d7370ed285a5ee2453a16242b3">Plus de détails...</a><br /></td></tr>
 <tr class="separator:afa1c08d7370ed285a5ee2453a16242b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3af80709fa79766df2346af265fc5c96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="csv__to__duel_8h.html#a3af80709fa79766df2346af265fc5c96">duel_to_duel</a> (const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a> t_mat, t_duel_mat *t_duel)</td></tr>
-<tr class="memdesc:a3af80709fa79766df2346af265fc5c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforme un csv de type matrice de duel stocké dans une structure t_mat_char_star_dyn en structure t_duel (matrice de duel)  <a href="#a3af80709fa79766df2346af265fc5c96">Plus de détails...</a><br /></td></tr>
+<tr class="memitem:a3af80709fa79766df2346af265fc5c96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="csv__to__duel_8h.html#a3af80709fa79766df2346af265fc5c96">duel_to_duel</a> (const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a> t_mat, <a class="el" href="structt__duel__mat.html">t_duel_mat</a> *t_duel)</td></tr>
+<tr class="memdesc:a3af80709fa79766df2346af265fc5c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">csv (matrice de duel) vers matrice de duel  <a href="#a3af80709fa79766df2346af265fc5c96">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a3af80709fa79766df2346af265fc5c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p>Déclare les fonctions permettant de transformer une structure t_mat_char_star_dyn en structure t_duel. </p>
-<p>Déclare le type t_arc_p pour représenter une structure <a class="el" href="structs__arc__p.html">s_arc_p</a> qui représente un arc.</p>
+<div class="textblock"><p>Fichier de déclarations relatives à la transformation d'un csv en matrice de duel. </p>
+<p>Déclare les fonctions permettant de transformer une structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a> en structure t_duel</p>
 <dl class="section author"><dt>Auteur</dt><dd>Dylan CARON</dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0.0</dd></dl>
-<dl class="section date"><dt>Date</dt><dd>02/01/2019</dd></dl>
-<dl class="section author"><dt>Auteur</dt><dd>Vincent DUGAT, Dylan CARON</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0.0</dd></dl>
 <dl class="section date"><dt>Date</dt><dd>02/01/2019 </dd></dl>
 </div><h2 class="groupheader">Documentation des fonctions</h2>
@@ -119,13 +120,13 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">void csv_to_duel </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a>&#160;</td>
           <td class="paramname"><em>t_mat</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">t_duel_mat *&#160;</td>
+          <td class="paramtype"><a class="el" href="structt__duel__mat.html">t_duel_mat</a> *&#160;</td>
           <td class="paramname"><em>t_duel</em>&#160;</td>
         </tr>
         <tr>
@@ -136,10 +137,11 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Transforme un csv de type liste de vote stocké dans une structure t_mat_char_star_dyn en structure t_duel (matrice de duel) </p>
+<p>csv (vote) vers matrice de duel </p>
+<p>Transforme un csv de type liste de vote stocké dans une structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a> en structure t_duel (matrice de duel)</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t_mat</td><td>Structure t_mat_char_star_dyn à transformer (non modifié) </td></tr>
+    <tr><td class="paramname">t_mat</td><td>Structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a> à transformer (non modifié) </td></tr>
     <tr><td class="paramname">t_duel</td><td>Matrice de duel à remplir </td></tr>
   </table>
   </dd>
@@ -156,13 +158,13 @@ Fonctions</h2></td></tr>
         <tr>
           <td class="memname">void duel_to_duel </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="squelette_8h.html#ab6756577e931c169a1abaa0ea439f2fc">t_mat_char_star_dyn</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a>&#160;</td>
           <td class="paramname"><em>t_mat</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">t_duel_mat *&#160;</td>
+          <td class="paramtype"><a class="el" href="structt__duel__mat.html">t_duel_mat</a> *&#160;</td>
           <td class="paramname"><em>t_duel</em>&#160;</td>
         </tr>
         <tr>
@@ -173,10 +175,11 @@ Fonctions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Transforme un csv de type matrice de duel stocké dans une structure t_mat_char_star_dyn en structure t_duel (matrice de duel) </p>
+<p>csv (matrice de duel) vers matrice de duel </p>
+<p>Transforme un csv de type matrice de duel stocké dans une structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a> en structure t_duel (matrice de duel)</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t_mat</td><td>Structure t_mat_char_star_dyn à transformer (non modifié) </td></tr>
+    <tr><td class="paramname">t_mat</td><td>Structure <a class="el" href="structt__mat__char__star__dyn.html" title="Matrice de chaine de caractères. ">t_mat_char_star_dyn</a> à transformer (non modifié) </td></tr>
     <tr><td class="paramname">t_duel</td><td>Matrice de duel à remplir </td></tr>
   </table>
   </dd>
