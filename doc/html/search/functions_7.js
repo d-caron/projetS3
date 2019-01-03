@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['uni_5ftour_5f1',['uni_tour_1',['../uni_8h.html#aa2187a609190552c6aea3bf018d3664a',1,'uni_tour_1(const t_mat_char_star_dyn t_mat, t_tab_int_dyn *t_res, int *null):&#160;uni.c'],['../uni_8c.html#aa2187a609190552c6aea3bf018d3664a',1,'uni_tour_1(const t_mat_char_star_dyn t_mat, t_tab_int_dyn *t_res, int *null):&#160;uni.c']]],
-  ['uni_5ftour_5f2',['uni_tour_2',['../uni_8h.html#a064f07b6a724c21767c731d266d9ceb5',1,'uni_tour_2(const t_mat_char_star_dyn t_mat, const int i_c1, const int i_c2, int *res_c1, int *res_c2, int *null):&#160;uni.c'],['../uni_8c.html#a064f07b6a724c21767c731d266d9ceb5',1,'uni_tour_2(const t_mat_char_star_dyn t_mat, const int i_c1, const int i_c2, int *res_c1, int *res_c2, int *null):&#160;uni.c']]]
+  ['init_5fargs',['init_args',['../args_8h.html#a86ce6582eb9dc40b89b8380554d32347',1,'init_args(args *args_struct):&#160;args.c'],['../args_8c.html#a86ce6582eb9dc40b89b8380554d32347',1,'init_args(args *args_struct):&#160;args.c']]],
+  ['init_5fmat_5fint',['init_mat_int',['../squelette_8h.html#a48718f42e674f032d418d56d9586a2bf',1,'utils_sd.c']]],
+  ['init_5ftab_5fint',['init_tab_int',['../squelette_8h.html#a941a572f313edd85907218084b61371a',1,'utils_sd.c']]]
 ];

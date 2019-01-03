@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['read_5fcsv',['read_csv',['../lecture__csv_8h.html#ac066767beed2a9568cc487f5e2f481c9',1,'read_csv(FILE **csv, t_mat_char_star_dyn *t_mat_char):&#160;lecture_csv.c'],['../lecture__csv_8c.html#ac066767beed2a9568cc487f5e2f481c9',1,'read_csv(FILE **csv, t_mat_char_star_dyn *t_mat_char):&#160;lecture_csv.c']]],
-  ['recup_5fmin',['recup_min',['../uni_8h.html#a8794f64825e221a2b928c94799f19acb',1,'recup_min(const t_mat_char_star_dyn t_mat, const int l, int *min):&#160;uni.c'],['../uni_8c.html#a8794f64825e221a2b928c94799f19acb',1,'recup_min(const t_mat_char_star_dyn t_mat, const int l, int *min):&#160;uni.c']]]
+  ['init_5fargs',['init_args',['../args_8h.html#a86ce6582eb9dc40b89b8380554d32347',1,'init_args(args *args_struct):&#160;args.c'],['../args_8c.html#a86ce6582eb9dc40b89b8380554d32347',1,'init_args(args *args_struct):&#160;args.c']]],
+  ['init_5fmat_5fint',['init_mat_int',['../squelette_8h.html#a48718f42e674f032d418d56d9586a2bf',1,'utils_sd.c']]],
+  ['init_5ftab_5fint',['init_tab_int',['../squelette_8h.html#a941a572f313edd85907218084b61371a',1,'utils_sd.c']]]
 ];

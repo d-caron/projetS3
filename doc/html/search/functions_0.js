@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['addfrontlist',['addFrontList',['../liste_8h.html#ab362f8b1c683c374542de1c37d5a3748',1,'addFrontList(liste *p, Elementliste e):&#160;liste.c'],['../liste_8c.html#ab362f8b1c683c374542de1c37d5a3748',1,'addFrontList(liste *p, Elementliste e):&#160;liste.c']]],
+  ['addtaillist',['addTailList',['../liste_8h.html#ae44fac1e392193e620781404f18d119e',1,'addTailList(liste *p, Elementliste e):&#160;liste.c'],['../liste_8c.html#ae44fac1e392193e620781404f18d119e',1,'addTailList(liste *p, Elementliste e):&#160;liste.c']]],
   ['affiche_5fmat_5fint',['affiche_mat_int',['../squelette_8h.html#a0c2f4bf1b114391cb819274896104a0e',1,'utils_sd.c']]],
   ['affiche_5ft_5fduel_5fmat',['affiche_t_duel_mat',['../squelette_8h.html#a646d18b4e544730ccc92e1c9bf2ebe48',1,'utils_sd.c']]],
   ['affiche_5ft_5fmat_5fchar_5fstar_5fdyn',['affiche_t_mat_char_star_dyn',['../squelette_8h.html#aec48dc5361c3f0587263edda1f51723c',1,'utils_sd.c']]],
