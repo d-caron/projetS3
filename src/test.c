@@ -1,7 +1,10 @@
 /**
  * @file test.c
  *
- * @brief Fichier de tests pour les fonctions programés. Il génère l'exécutable "test"
+ * @brief Fichier de tests 
+ *
+ * Teste les différentes fonctions programés. 
+ * Il génère l'exécutable "test"
  *
  * @author Dylan CARON
  *
@@ -48,11 +51,13 @@ int main (int argc, char** argv) {
 
   // Lecture du fichier csv
 
-  FILE* csv = NULL;
+  FILE* csv = fopen(my_args.csv_file, "r");
 
-  open_csv(my_args.csv_file, &csv);
   read_csv(&csv, &t_mat_char);
-  close_csv(&csv);
+  
+  if (csv != stdout) {
+    fclose(csv);
+  }
 
   affiche_t_mat_char_star_dyn(t_mat_char, logfp);
 

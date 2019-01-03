@@ -1,7 +1,7 @@
 /**
  * @file liste.h
  *
- * @brief Fichier de déclaration relative aux listes
+ * @brief Fichier de déclarations relatives aux listes
  *
  * Déclare un nouveau type de structure permettant d'encapsuler les listes d'arcs
  * et un enssemble de fonctions permettant de manipuler ces dernières
@@ -14,15 +14,15 @@
  */
 
 
-#ifndef listeSTAT
-#define listeSTAT
+#ifndef _LISTE_H
+#define _LISTE_H
 
 
 #include "elementliste.h"
 
 
-#define DIMMAX 100 /// @def taille maximale de la liste statique
-#define VIDE -1   /// @def constante  pour indiquer que la liste est vide (par convention)
+#define DIMMAX 100  // Taille maximale de la liste statique
+#define VIDE -1     // Constante pour indiquer que la liste est vide (par convention)
 
 
 /**

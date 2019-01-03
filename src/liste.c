@@ -30,7 +30,7 @@ void createList (liste *p) {
 void addFrontList (liste* p, Elementliste e) {
   if (! fullList(*p)) {
     copie_element(p->Tabliste + ((p->Tete - 1) % DIMMAX), e);
-    p->Tete = (p->tete - 1) % DIMMAX;
+    p->Tete = (p->Tete - 1) % DIMMAX;
     p->nbElt ++;
   }
 }
@@ -92,7 +92,7 @@ bool fullList (liste p) {
 
 
 void dumpList (liste p, FILE* fp) {
-  for (i = 0; i < p.nbElt - 1; i ++) {
+  for (int i = 0; i < p.nbElt - 1; i ++) {
     afficher_element(p.Tabliste[(p.Tete + i) % DIMMAX], fp);
     fprintf(fp, ",\n");
   }
@@ -111,7 +111,7 @@ void swapEltList (Elementliste* a, Elementliste* b) {
 }
 
 
-void bubbleSortList (liste* p) {a
+void bubbleSortList (liste* p) {
   bool sorted = true;
 
   for (int i = nbEltList(*p) - 1; i > 0; i --) {

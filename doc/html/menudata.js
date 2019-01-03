@@ -36,4 +36,5 @@ var menudata={children:[
 {text:"r",url:"globals_func.html#index_r"},
 {text:"s",url:"globals_func.html#index_s"},
 {text:"u",url:"globals_func.html#index_u"},
-{text:"v",url:"globals_func.html#index_v"}]}]}]}]}
+{text:"v",url:"globals_func.html#index_v"}]},
+{text:"Définitions de type",url:"globals_type.html"}]}]}]}

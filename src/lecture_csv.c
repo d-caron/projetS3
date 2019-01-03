@@ -1,7 +1,7 @@
 /**
  * @file lecture_csv.c
  *
- * @brief Définie les fonctions de lecture_csv.h
+ * @brief Fichier de définitions relatives à la lecture d'un csv
  *
  * @see ../head/lecture_csv.h
  *

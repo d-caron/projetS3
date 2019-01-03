@@ -1,7 +1,7 @@
 /**
  * @file utils_sd.h
  *
- * @brief Défini les fonctions de squelette.h
+ * @brief Fichier de définitions relatives aux SD partagées
  *
  * @author Vincent DUGAT, Dylan CARON
  *

@@ -1,9 +1,7 @@
 /**
  * @file uni.c
  *
- * @brief Définie les fonctions déclarées dans uni.h
- *
- * @see ../head/uni.h
+ * @brief Fichier de définitions relatives aux méthodes de scrutin uninominales
  *
  * @author Dylan CARON
  *

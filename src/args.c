@@ -1,9 +1,7 @@
 /**
  * @file args.c
  *
- * @brief Définie les structures et fonctions de args.h
- *
- * @see ../head/args.h
+ * @brief Fichier de définitions relatives aux arguments
  *
  * @author Dylan CARON
  *
@@ -11,6 +9,7 @@
  *
  * @date 02/01/2019 
  */
+
 
 #include "../head/args.h"
 

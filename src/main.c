@@ -1,11 +1,13 @@
 /**
  * @file main.c
  *
- * @brief Fichier principal, générateur de l'exécutable principal "rev_party"
- *  Il vérifie les arguments,
- *  Lis le fichier csv;
- *  Effectue les methodes de scrutins demandés
- *  Stocke les résultats dans le fichier demandé ou à défaut les affiches à l'écran
+ * @brief Fichier principal
+ *
+ * Générateur de l'exécutable principal "rev_party"
+ * Il vérifie les arguments,
+ * Lis le fichier csv,
+ * Effectue les methodes de scrutins demandés et
+ * Stocke les résultats dans le fichier demandé ou à défaut les affiches à l'écran
  *
  * @author Dylan CARON
  *
@@ -38,13 +40,11 @@ int main (int argc, char** argv) {
   FILE * logfp;
   
   if (strcmp(my_args.log_file, "\0") == 0) {  //  Pas de fichier de log
-    logfp = stdout;                     // Ecriture dans stdout         
+    logfp = stdout;                           // Ecriture dans stdout         
   } else {                                    //  Fichier de log
-    logfp = fopen(my_args.log_file, "a");           // Ecriture dans le fichier
+    logfp = fopen(my_args.log_file, "a");     // Ecriture dans le fichier
   }
   
-  open_csv(my_args.csv_file, &csv);           //  Ouverture du csv
-
   t_mat_char_star_dyn t_mat_char;             //  Création de la matrice de char*
   creer_t_mat_char_dyn(&t_mat_char);
   if (strcmp(my_args.csv_type, "-i") == 0) t_mat_char.offset = 3;

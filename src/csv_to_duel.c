@@ -1,9 +1,7 @@
 /**
  * @file csv_to_duel.c
  *
- * @brief Définie les fonctions de csv_to_duel.h
- *
- * @see ../head/csv_to_duel.h
+ * @brief Fichier de définitions relatives à la transformation d'un csv en matrice de duel 
  *
  * @author Dylan CARON
  *
