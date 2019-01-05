@@ -30,7 +30,7 @@ void creer_python (liste lst) {
 
   // Ecriture des instructions
   for (int i = 0; i < lst.nbElt; i ++) {
-    fprintf(py, "G.add_edges_from([%d, %d], weight=%d)", 
+    fprintf(py, "G.add_edges_from([%d, %d], weight=%d)\n", 
         lst.Tabliste[i].orig,
         lst.Tabliste[i].dest,
         lst.Tabliste[i].poids

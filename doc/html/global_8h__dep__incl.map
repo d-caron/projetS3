@@ -1,5 +1,10 @@
 <map id="/home/dylan/L2INFS3/projetS3/head/global.h" name="/home/dylan/L2INFS3/projetS3/head/global.h">
-<area shape="rect" id="node2" href="$elementliste_8h.html" title="Fichier de déclarations relatives à l&#39; Elementliste. " alt="" coords="5,95,216,136"/>
-<area shape="rect" id="node3" href="$liste_8h.html" title="Fichier de déclarations relatives aux listes. " alt="" coords="31,184,190,225"/>
-<area shape="rect" id="node4" href="$liste_8c.html" title="Fichier de définitions relative aux listes. " alt="" coords="32,273,189,315"/>
+<area shape="rect" id="node2" href="$elementliste_8h.html" title="Fichier de déclarations relatives à l&#39; Elementliste. " alt="" coords="220,95,431,136"/>
+<area shape="rect" id="node3" href="$liste_8h.html" title="Fichier de déclarations relatives aux listes. " alt="" coords="246,184,405,225"/>
+<area shape="rect" id="node4" href="$duel__to__liste_8h.html" title="Fichier de déclaration relative à la transformation d&#39;une matrice de duel en liste d&#39;arc..." alt="" coords="71,273,228,329"/>
+<area shape="rect" id="node6" href="$main_8c.html" title="Fichier principal. " alt="" coords="187,385,344,426"/>
+<area shape="rect" id="node7" href="$graphe__python_8h.html" title="Fichier de déclaration relative à la création du fichier python affichant les graphes. " alt="" coords="303,273,468,329"/>
+<area shape="rect" id="node9" href="$liste_8c.html" title="Fichier de définitions relative aux listes. " alt="" coords="492,281,649,322"/>
+<area shape="rect" id="node5" href="$duel__to__liste_8c.html" title="Fichier de définition relative à la transformation d&#39;une matrice de duel en liste d&#39;arc..." alt="" coords="5,377,163,433"/>
+<area shape="rect" id="node8" href="$graphe__python_8c.html" title="Fichier de définition relative à la création du fichier python affichant les graphes. " alt="" coords="368,377,525,433"/>
 </map>

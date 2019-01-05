@@ -1,4 +1,9 @@
 <map id="/home/dylan/L2INFS3/projetS3/head/elementliste.h" name="/home/dylan/L2INFS3/projetS3/head/elementliste.h">
-<area shape="rect" id="node2" href="$liste_8h.html" title="Fichier de déclarations relatives aux listes. " alt="" coords="31,95,190,136"/>
-<area shape="rect" id="node3" href="$liste_8c.html" title="Fichier de définitions relative aux listes. " alt="" coords="32,184,189,225"/>
+<area shape="rect" id="node2" href="$liste_8h.html" title="Fichier de déclarations relatives aux listes. " alt="" coords="246,95,405,136"/>
+<area shape="rect" id="node3" href="$duel__to__liste_8h.html" title="Fichier de déclaration relative à la transformation d&#39;une matrice de duel en liste d&#39;arc..." alt="" coords="71,184,228,240"/>
+<area shape="rect" id="node5" href="$main_8c.html" title="Fichier principal. " alt="" coords="187,295,344,337"/>
+<area shape="rect" id="node6" href="$graphe__python_8h.html" title="Fichier de déclaration relative à la création du fichier python affichant les graphes. " alt="" coords="303,184,468,240"/>
+<area shape="rect" id="node8" href="$liste_8c.html" title="Fichier de définitions relative aux listes. " alt="" coords="492,191,649,233"/>
+<area shape="rect" id="node4" href="$duel__to__liste_8c.html" title="Fichier de définition relative à la transformation d&#39;une matrice de duel en liste d&#39;arc..." alt="" coords="5,288,163,344"/>
+<area shape="rect" id="node7" href="$graphe__python_8c.html" title="Fichier de définition relative à la création du fichier python affichant les graphes. " alt="" coords="368,288,525,344"/>
 </map>
