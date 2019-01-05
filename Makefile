@@ -19,7 +19,9 @@ build/rev_party: \
 	obj/csv_to_duel.o \
 	obj/uni.o \
 	obj/liste.o \
-	obj/elementliste.o
+	obj/elementliste.o \
+	obj/duel_to_liste.o \
+	obj/graphe_python.o
 
 	$(CC) -o $@ $^ $(CFLAGS)
 
@@ -31,7 +33,9 @@ build/test: \
 	obj/csv_to_duel.o \
 	obj/uni.o \
 	obj/liste.o \
-	obj/elementliste.o
+	obj/elementliste.o \
+	obj/duel_to_liste.o \
+	obj/graphe_python.o
 
 	$(CC) -o $@ $^ $(CFLAGS)
 
@@ -41,7 +45,9 @@ obj/utils_sd.o: head/squelette.h
 obj/lecture_csv.o: head/lecture_csv.h 
 obj/csv_to_duel: head/csv_to_duel.h
 obj/liste.o: head/liste.h
-obj/elementliste.o : head/elementliste.h
+obj/elementliste.o: head/elementliste.h
+obj/duel_to_liste.o: head/duel_to_liste.h
+obj/graphe_python.o: head/graphe_python.h
 
 obj/%.o: src/%.c
 	$(CC) -c $< -o $@ $(CFLAGS)

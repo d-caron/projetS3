@@ -4,7 +4,7 @@
  * @brief Fichier de déclarations relatives à la transformation d'un csv en matrice de duel
  *
  * Déclare les fonctions permettant de transformer une structure t_mat_char_star_dyn 
- * en structure t_duel
+ * en structure t_duel_mat
  *
  * @author Dylan CARON
  *

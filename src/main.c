@@ -25,18 +25,21 @@
 #include "../head/squelette.h"
 #include "../head/csv_to_duel.h"
 #include "../head/uni.h"
+#include "../head/liste.h"
+#include "../head/duel_to_liste.h"
+#include "../head/graphe_python.h"
+
 
 int main (int argc, char** argv) {
 
-  //  ETAPE 1 : Vérification des arguments
+  //  ETAPE 1 : Gestion des arguments
   args my_args;
   init_args (&my_args);
 
   verif_args (&my_args, argc, argv);
 
 
-  //  ETAPE 2 : Lecture du fichier csv
-  FILE* csv = fopen(my_args.csv_file, "r");   //  Fichier de stockage du csv
+  //  ETAPE 2 : Gestion du log
   FILE * logfp;
   
   if (strcmp(my_args.log_file, "\0") == 0) {  //  Pas de fichier de log
@@ -44,7 +47,11 @@ int main (int argc, char** argv) {
   } else {                                    //  Fichier de log
     logfp = fopen(my_args.log_file, "a");     // Ecriture dans le fichier
   }
-  
+
+
+  //  ETAPE 3 : Gestion du csv
+  FILE* csv = fopen(my_args.csv_file, "r");   //  Fichier de stockage du csv
+    
   t_mat_char_star_dyn t_mat_char;             //  Création de la matrice de char*
   creer_t_mat_char_dyn(&t_mat_char);
   if (strcmp(my_args.csv_type, "-i") == 0) t_mat_char.offset = 3;
@@ -54,7 +61,7 @@ int main (int argc, char** argv) {
   affiche_t_mat_char_star_dyn(t_mat_char, logfp); 
   
 
-  //  ETAPE 3 : Création de la matrice de duel
+  //  ETAPE 4 : Gestion de la matrice de duel
   if (strcmp(my_args.method, "uni1") != 0 &&  //  Si on impose pas de méthode uni1, uni2 ou va
       strcmp(my_args.method, "uni2") != 0 &&  // soit, si on à besoin d'une matrice de duel
       strcmp(my_args.method, "va") != 0)
@@ -73,10 +80,27 @@ int main (int argc, char** argv) {
     fprintf(logfp, "\n\n");                   //  Affichage de la matrice de duel
     fprintf(logfp, "Matrice de duel correspondante : \n\n");
     affiche_t_duel_mat(t_duel, logfp);
+
+
+    //  ETAPE 5 : Gestion de la liste d'arcs
+    liste lst;
+    createList(&lst);
+    remplir_liste(&lst, t_duel, t_mat_char.nbRows - 1);
+
+    fprintf(logfp, "\n\n");                   //  Affichage de la liste d'arcs
+    fprintf(logfp, "Liste d'arc correspondante : \n\n");
+    dumpList(lst, logfp);
+
+    free(t_duel.entete);
+    free(t_duel.mat.tab);
+
+
+    //  ETAPE 6 : Gestion du graphe
+    creer_python(lst);
   }
 
 
-  //  ETAPE 4 : Méthode de scrutin
+  //  ETAPE 7 : Méthode de scrutin
   if (strcmp(my_args.method, "uni1") == 0) {
     scrutin_uni1(t_mat_char, logfp);
   } else if (strcmp(my_args.method, "uni2") == 0) {
@@ -99,11 +123,12 @@ int main (int argc, char** argv) {
 
   }
 
+  free(t_mat_char.tab);
 
-  //  ETAPE 5 : Fermeture du csv
-  if (csv != stdout) {
-    fclose(csv);
-  }
+
+  //  ETAPE 8 : Fermeture des fichiers
+  fclose(csv);
+  fclose(logfp);
 
   return 0;
 }

@@ -32,8 +32,8 @@ void copie_element (Elementliste* cible, Elementliste source) {
 void afficher_element (Elementliste e, FILE* fp) {
   fprintf (fp, "%d --- %d --> %d",
       e.orig,
-      e.dest,
-      e.poids
+      e.poids,
+      e.dest
   );
 }
 
