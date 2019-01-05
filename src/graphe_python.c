@@ -31,7 +31,7 @@ void creer_python (liste lst) {
   // Ecriture des instructions
   for (int i = 0; i < lst.nbElt; i ++) {
     printf("nbElt : %d, i = %d\n", lst.nbElt, i);
-    fprintf(py, "G.add_edges_from([%d, %d], weight=%d)\n", 
+    fprintf(py, "G.add_edges_from([(%d, %d)], weight=%d)\n", 
         lst.Tabliste[(lst.Tete + i + DIMMAX) % DIMMAX].orig,
         lst.Tabliste[(lst.Tete + i + DIMMAX) % DIMMAX].dest,
         lst.Tabliste[(lst.Tete + i + DIMMAX) % DIMMAX].poids
