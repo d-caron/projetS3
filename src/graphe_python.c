@@ -26,14 +26,15 @@ void creer_python (liste lst) {
   }
 
   // Lecture sans écriture du commentaire
-  while ((ch = fgetc(modele)) != '\n')
+  while ((ch = fgetc(modele)) != '\n') {}
 
   // Ecriture des instructions
   for (int i = 0; i < lst.nbElt; i ++) {
+    printf("nbElt : %d, i = %d\n", lst.nbElt, i);
     fprintf(py, "G.add_edges_from([%d, %d], weight=%d)\n", 
-        lst.Tabliste[i].orig,
-        lst.Tabliste[i].dest,
-        lst.Tabliste[i].poids
+        lst.Tabliste[(lst.Tete + i + DIMMAX) % DIMMAX].orig,
+        lst.Tabliste[(lst.Tete + i + DIMMAX) % DIMMAX].dest,
+        lst.Tabliste[(lst.Tete + i + DIMMAX) % DIMMAX].poids
     );
   }
 
