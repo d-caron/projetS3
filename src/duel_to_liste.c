@@ -24,7 +24,7 @@ void remplir_liste (liste* lst, t_duel_mat duel, int nb_vote) {
         e.dest = c;
         e.poids = duel.mat.tab[l][c];
 
-        addFrontList (lst, e);
+        addTailList (lst, e);
       }
     }
   }

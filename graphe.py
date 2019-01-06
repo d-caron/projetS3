@@ -6,16 +6,12 @@ import pylab
 
 G = nx.DiGraph()
 
-G.add_edges_from([(4, 3)], weight=5)
-G.add_edges_from([(2, 4)], weight=5)
-G.add_edges_from([(2, 3)], weight=5)
-G.add_edges_from([(1, 4)], weight=6)
-G.add_edges_from([(1, 3)], weight=6)
-G.add_edges_from([(1, 2)], weight=4)
-G.add_edges_from([(0, 4)], weight=6)
-G.add_edges_from([(0, 3)], weight=7)
-G.add_edges_from([(0, 2)], weight=6)
-G.add_edges_from([(0, 1)], weight=5)
+G.add_edges_from([(1, 0)], weight=58)
+G.add_edges_from([(1, 2)], weight=68)
+G.add_edges_from([(1, 3)], weight=68)
+G.add_edges_from([(2, 0)], weight=58)
+G.add_edges_from([(2, 3)], weight=83)
+G.add_edges_from([(3, 0)], weight=58)
 
 
 print(tournament.is_tournament(G))

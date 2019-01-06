@@ -21,7 +21,9 @@ build/rev_party: \
 	obj/liste.o \
 	obj/elementliste.o \
 	obj/duel_to_liste.o \
-	obj/graphe_python.o
+	obj/graphe_python.o \
+	obj/condorcet.o \
+	obj/vote_alternatif.o
 
 	$(CC) -o $@ $^ $(CFLAGS)
 
@@ -35,7 +37,9 @@ build/test: \
 	obj/liste.o \
 	obj/elementliste.o \
 	obj/duel_to_liste.o \
-	obj/graphe_python.o
+	obj/graphe_python.o \
+	obj/condorcet.o \
+	obj/vote_alternatif.o
 
 	$(CC) -o $@ $^ $(CFLAGS)
 
@@ -48,6 +52,8 @@ obj/liste.o: head/liste.h
 obj/elementliste.o: head/elementliste.h
 obj/duel_to_liste.o: head/duel_to_liste.h
 obj/graphe_python.o: head/graphe_python.h
+obj/condorcet.o: head/condorcet.h
+obj/vote_alternatif.o: head/vote_alternatif.h
 
 obj/%.o: src/%.c
 	$(CC) -c $< -o $@ $(CFLAGS)

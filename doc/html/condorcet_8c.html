@@ -79,8 +79,8 @@ Graphe des dépendances par inclusion de condorcet.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="condorcet_8c__incl.png" border="0" usemap="#_2home_2dylan_2L2INFS3_2projetS3_2src_2condorcet_8c" alt=""/></div>
 <map name="_2home_2dylan_2L2INFS3_2projetS3_2src_2condorcet_8c" id="_2home_2dylan_2L2INFS3_2projetS3_2src_2condorcet_8c">
-<area shape="rect" id="node2" href="condorcet_8h.html" title="Fichier de déclarations relatives aux méthode de scrutin de condorcet. " alt="" coords="35,95,182,121"/>
-<area shape="rect" id="node3" href="squelette_8h.html" title="Fichier de déclarations relatives aux SD partagées. " alt="" coords="5,169,100,196"/>
+<area shape="rect" id="node2" href="condorcet_8h.html" title="Fichier de déclarations relatives aux méthode de scrutin de condorcet. " alt="" coords="66,95,213,121"/>
+<area shape="rect" id="node3" href="squelette_8h.html" title="Fichier de déclarations relatives aux SD partagées. " alt="" coords="36,169,131,196"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -89,6 +89,9 @@ Fonctions</h2></td></tr>
 <tr class="memitem:a5f44ffb6598a53b1cad0078b675e9a49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="condorcet_8c.html#a5f44ffb6598a53b1cad0078b675e9a49">condorcet_vainqueur</a> (<a class="el" href="structt__duel__mat.html">t_duel_mat</a> duel, int *v)</td></tr>
 <tr class="memdesc:a5f44ffb6598a53b1cad0078b675e9a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trouve le gagnant de condorcet.  <a href="#a5f44ffb6598a53b1cad0078b675e9a49">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a5f44ffb6598a53b1cad0078b675e9a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aa64e0b56d806fd04547f31b4286f05"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="condorcet_8c.html#a3aa64e0b56d806fd04547f31b4286f05">resolution_minimax</a> (<a class="el" href="structt__duel__mat.html">t_duel_mat</a> duel)</td></tr>
+<tr class="memdesc:a3aa64e0b56d806fd04547f31b4286f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applique la méthode minimax.  <a href="#a3aa64e0b56d806fd04547f31b4286f05">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3aa64e0b56d806fd04547f31b4286f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdafd4f17dd65f70f297055bf09d52f8"><td class="memItemLeft" align="right" valign="top"><a id="abdafd4f17dd65f70f297055bf09d52f8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>scrutin_cm</b> (<a class="el" href="structt__mat__char__star__dyn.html">t_mat_char_star_dyn</a> t_mat, <a class="el" href="structt__duel__mat.html">t_duel_mat</a> duel, FILE *logfp)</td></tr>
 <tr class="separator:abdafd4f17dd65f70f297055bf09d52f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,6 +144,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>scrutin_cs</b> (<a cl
   </dd>
 </dl>
 <dl class="section return"><dt>Renvoie</dt><dd>true, s'il y a un gagnant, false sinon </dd></dl>
+
+</div>
+</div>
+<a id="a3aa64e0b56d806fd04547f31b4286f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aa64e0b56d806fd04547f31b4286f05">&#9670;&nbsp;</a></span>resolution_minimax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int resolution_minimax </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structt__duel__mat.html">t_duel_mat</a>&#160;</td>
+          <td class="paramname"><em>duel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applique la méthode minimax. </p>
+<p>Lorsque la méthode de condorcet n'à pas de gagnant, on peux appliquer la méthode de résolution minimax. On cherche le pire score de chaques candidats, et on retient celui qui à le meilleur</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">duel</td><td>Matrice de duel à analyser</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>l'indice du vainqueur dans la matrice </dd></dl>
 
 </div>
 </div>

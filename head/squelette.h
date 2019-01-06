@@ -19,6 +19,7 @@
 
 
 #include <stdio.h>
+#include <stdlib.h>
 
 
 #define STR_LEN 100
