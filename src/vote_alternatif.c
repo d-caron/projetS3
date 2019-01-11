@@ -11,9 +11,6 @@ void scrutin_alternatif (const t_mat_char_star_dyn vote, FILE* logfp) {
     t_candidats.tab[i] = i;
   }
   
-  printf("t_candidat :\n");
-  affiche_t_tab_int_dyn(t_candidats, stdout);
-
   int min;
 
   while (t_res.dim > 1) {
@@ -26,9 +23,6 @@ void scrutin_alternatif (const t_mat_char_star_dyn vote, FILE* logfp) {
         min = i;
       }
     }
-
-    printf("%d\n", min);
-
 
     // Elimination du candidat qui à perdu
     t_candidats.tab[min] = t_candidats.tab[t_candidats.dim - 1];
